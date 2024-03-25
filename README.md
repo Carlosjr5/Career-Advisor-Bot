@@ -16,23 +16,47 @@ To kickstart our exciting chatbot project powered by Rasa, follow these straight
 💻 Switch to your preferred Integrated Development Environment (IDE), checkout your newly created branch, and start testing! Experiment with the chatbot, tweak its responses, and let your imagination run wild! 🎉
 
 ### First Time Setup - Rasa Shell
-🤖 For those testing the chatbot for the first time, it's as simple as running `rasa shell` in your terminal. This will launch the basic chatbot interface, allowing you to start chatting instantly! 🗣️💬
+🤖 For those testing the chatbot for the first time, it's as simple as running the following commands in your terminal:
 
-### Initial Testing and Interaction
+1. Open your terminal and execute:
+   ```bash
+   1.- bash
+      ```
+      ```bash
+   2.- python3 -m venv ./venv
+     ```
+    ```bash
+   3.- source ./venv/bin/activate
+    ```
+    ```bash
+   4.- pip install rasa
+    ```
+   ```bash
+   5.- rasa init
+    ```
+   ```bash
+   6.- rasa shell
+    ```
+
+
+This will launch the basic chatbot interface, allowing you to start chatting instantly! 🗣️💬
+
+Initial Testing and Interaction
 As you interact with the chatbot, observe its responses and behavior closely. This initial testing phase helps us grasp the bot's current capabilities and pinpoint areas for enhancement. 🔍
 
-### Editing NLU and Stories
+Editing NLU and Stories
 📝 Now, let's collaborate on enhancing the chatbot's intelligence. Dive into the NLU and Stories scripts together. Add new intents, refine existing ones, and craft engaging conversational paths as a team. Let's pool our ideas and creativity! 🧠💡
 
-### Training the Chatbot
-After making adjustments, ensure everyone is ready to run `rasa train`. This step is crucial as it retrains the model using our collective modifications, making the chatbot smarter and more responsive. 🚂📊
+Training the Chatbot
+After making adjustments, ensure everyone is ready to run rasa train. This step is crucial as it retrains the model using our collective modifications, making the chatbot smarter and more responsive. 🚂📊
 
-### Group Testing
-Once the training is complete, let's run `rasa shell` together to test our revamped chatbot! We can engage in conversation, share feedback, and iterate further as needed. 🚀🔄
+Group Testing
+Once the training is complete, let's run rasa shell together to test our revamped chatbot! We can engage in conversation, share feedback, and iterate further as needed. 🚀🔄
 
 With our combined efforts, we'll elevate our chatbot from a basic concept to a dynamic and effective communication tool. Let's collaborate, communicate, and innovate together! 💬
 
 Happy coding! If you have any questions or ideas, feel free to reach out. Let's make this chatbot project an epic adventure! 🤖
+
 
 **Carlos Jiménez Rodríguez**  
   📧 40452913@live.napier.ac.uk
