@@ -1,0 +1,19 @@
+# Rasa generated files
+__pycache__
+*.pyc
+*.db
+*.sqlite
+
+# Rasa model files
+models/
+
+# Rasa temporary files
+.cache/
+logs/
+
+# Rasa training data
+data/nlu.md
+data/stories.md
+
+# Rasa environment files
+venv/
