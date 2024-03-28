@@ -20,22 +20,22 @@ To kickstart our exciting chatbot project powered by Rasa, follow these straight
 
 1. Open your terminal and execute:
    ```bash
-   1.- bash
+   bash
       ```
       ```bash
-   2.- python3 -m venv ./venv
+   python3 -m venv ./venv
      ```
     ```bash
-   3.- source ./venv/bin/activate
+   source ./venv/bin/activate
     ```
     ```bash
-   4.- pip install rasa
+   pip install rasa
     ```
    ```bash
-   5.- rasa train
+   rasa train
     ```
    ```bash
-   6.- rasa shell
+   rasa shell
     ```
 
 
