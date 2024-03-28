@@ -1,13 +1,86 @@
 version: "3.1"
 
 rules:
+- rule: Respond to greeting
+  steps:
+  - intent: greet
+  - action: utter_greet
 
-- rule: Say goodbye anytime the user says goodbye
+- rule: Respond to happy
+  steps:
+  - intent: mood_happy
+  - action: utter_happy
+
+- rule: Respond to goodbye
   steps:
   - intent: goodbye
   - action: utter_goodbye
 
-- rule: Say 'I am a bot' anytime the user challenges
+
+- rule: Respond to bot challenge
   steps:
   - intent: bot_challenge
-  - action: utter_iamabot
+  - action: utter_deny
+
+- rule: Find career interest
+  steps:
+  - intent: find_career_interest
+  - action: utter_ask_skills
+  - active_loop: utter_ask_skills
+
+- rule: Explore interests
+  steps:
+  - intent: explore_interests
+  - action: utter_ask_passions
+  - active_loop: utter_ask_passions
+
+- rule: Ask about skills
+  steps:
+  - intent: ask_about_skills
+  - action: utter_ask_skills
+  - active_loop: utter_ask_skills
+
+- rule: Ask about passions
+  steps:
+  - intent: ask_about_passions
+  - action: utter_ask_passions
+  - active_loop: utter_ask_passions
+
+- rule: Ask about values
+  steps:
+  - intent: ask_about_values
+  - action: utter_ask_values
+  - active_loop: utter_ask_values
+
+- rule: Ask about personality
+  steps:
+  - intent: ask_about_personality
+  - action: utter_ask_personality
+  - active_loop: utter_ask_personality
+
+- rule: Respond to computing science interest
+  steps:
+  - intent: computing_science
+  - action: utter_computing_science_branches
+
+- rule: Respond to software development interest
+  steps:
+  - intent: software_development
+  - action: utter_software_development_explanation
+
+- rule: Respond to data science interest
+  steps:
+  - intent: data_science
+  - action: utter_data_science_explanation
+
+- rule: Respond to cybersecurity interest
+  steps:
+  - intent: cybersecurity
+  - action: utter_cybersecurity_explanation
+
+- rule: Respond to artificial intelligence interest
+  steps:
+  - intent: artificial_intelligence
+  - action: utter_artificial_intelligence_explanation
+
+

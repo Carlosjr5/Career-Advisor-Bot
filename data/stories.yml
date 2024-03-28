@@ -6,25 +6,40 @@ stories:
   steps:
   - intent: greet
   - action: utter_greet
-  - intent: mood_great
+  - intent: mood_happy
   - action: utter_happy
 
-- story: sad path 1
+- story: getting to know the user
   steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: mood_unhappy
-  - action: utter_cheer_up
-  - action: utter_did_that_help
-  - intent: affirm
-  - action: utter_happy
+  - intent: find_career_interest
+  - action: utter_ask_skills
+  - intent: explore_interests
+  - action: utter_ask_passions
+  - intent: ask_about_skills
+  - action: utter_ask_skills
+  - intent: ask_about_personality
+  - action: utter_ask_personality
 
-- story: sad path 2
+
+- story: user expresses interest in computing science
   steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: mood_unhappy
-  - action: utter_cheer_up
-  - action: utter_did_that_help
-  - intent: deny
-  - action: utter_goodbye
+  - intent: computing_science
+  - action: utter_computing_science_branches
+  - intent: software_development
+  - action: utter_software_development_explanation
+  - intent: data_science
+  - action: utter_data_science_explanation
+  - intent: cybersecurity
+  - action: utter_cybersecurity_explanation
+
+
+- story: user expresses interest in artificial intelligence
+  steps:
+  - intent: artificial_intelligence
+  - action: utter_artificial_intelligence_explanation
+  - intent: learning_outcomes_ai
+  - action: utter_learning_outcomes_ai
+  - intent: career_future_ai
+  - action: utter_career_future_ai
+
+

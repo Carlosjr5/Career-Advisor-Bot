@@ -32,7 +32,10 @@ To kickstart our exciting chatbot project powered by Rasa, follow these straight
    4.- pip install rasa
     ```
    ```bash
-   5.- rasa shell
+   5.- rasa train
+    ```
+   ```bash
+   6.- rasa shell
     ```
 
 

@@ -7,28 +7,128 @@ intents:
   - deny
   - mood_great
   - mood_unhappy
+  - mood_happy
   - bot_challenge
+  - find_career_interest
+  - explore_interests
+  - ask_about_skills
+  - ask_about_passions
+  - ask_about_values
+  - ask_about_personality
+  - computing_science
+  - data_science
+  - software_development
+  - cybersecurity
+  - artificial_intelligence
+  - career_future_ai
+  - learning_outcomes_ai
+
+entities:
+  - skills
+  - passions
+  - values
+  - personality_traits
 
 responses:
+
+
   utter_greet:
-  - text: "Hey! How are you?"
-
-  utter_cheer_up:
-  - text: "Here is something to cheer you up:"
-    image: "https://i.imgur.com/nGF1K8f.jpg"
-
-  utter_did_that_help:
-  - text: "Did that help you?"
-
+    - text: "Hey there! How's your day going?"
   utter_happy:
-  - text: "Great, carry on!"
+    - text: "Happy to hear, I am doing great as well!
+           \nHow can I help you today finding your future pathway?"
+  utter_deny:
+    - text: "I understand. Feel free to reach out if you change your mind or need further assistance."
+  utter_ask_skills:
+    - text: "What are some of your standout skills or areas of expertise?"
+  utter_ask_passions:
+    - text: "What truly excites you? What activities or subjects make you feel energized?"
+  utter_ask_values:
+    - text: "What principles or ideals do you hold dear? What kind of impact do you aspire to make in the world?"
+  utter_ask_personality:
+    - text: "Describe your personality to me. Are you more outgoing or introverted? What work environments do you thrive in?"
+  utter_computing_science_branches:
+    - text: "That's fantastic! Computing science offers various pathways. Here are a few options you might consider:
+        \n\n1. Software Development: Focuses on designing, coding, and maintaining software applications.
+        \n\n2. Data Science: Involves analyzing large datasets to extract insights and make data-driven decisions.
+        \n\n3. Cybersecurity: Concentrates on protecting computer systems, networks, and data from cyber threats.
+        \n\n4. Artificial Intelligence: Explores the development of intelligent systems capable of learning and decision-making.
+        \n\nPlease let me know if you'd like more information about any of these pathways."
+  utter_data_science_branches:
+    - text: "Data Science is an exciting field that involves analyzing large datasets to extract valuable insights. Would you like to learn more about Data Science?"
+  utter_software_development_explanation:
+    - text: "Software development involves designing, coding, and maintaining software applications. It's a dynamic field with opportunities in web development, mobile app development, and software engineering roles.
+        
+        \n\nLearning outcomes:
+            \n- Proficiency in programming languages like Python, Java, or JavaScript
+            \n- Understanding of software development methodologies
+            \n- Ability to collaborate in agile teams
+        \n\nCareer future:
+            \n- Software Developer
+            \n- Web Developer
+            \n- Mobile App Developer
+            \n- Software Engineer"
+
+  utter_data_science_explanation:
+    - text: "Data science focuses on analyzing large datasets to extract insights and make data-driven decisions. It involves techniques from statistics, machine learning, and data visualization.
+        \n\nLearning outcomes:
+            \n- Proficiency in data manipulation and analysis
+            \n- Ability to develop predictive models
+            \n- Experience with data visualization tools
+        \n\nCareer future:
+            \n- Data Scientist
+            \n- Machine Learning Engineer
+            \n- Data Analyst
+            \n- Business Analyst"
+  utter_cybersecurity_explanation:
+    - text: "Cybersecurity focuses on protecting computer systems, networks, and data from cyber threats. It involves techniques such as encryption, network security, and threat analysis.
+        \n\nLearning outcomes:
+            \n- Understanding of cybersecurity principles
+            \n- Proficiency in security tools and techniques
+            \n- Ability to identify and mitigate security risks
+        \n\nCareer future:
+            \n- Cybersecurity Analyst
+            \n- Information Security Specialist
+            \n- Security Consultant
+            \n- Ethical Hacker"
+  utter_artificial_intelligence_explanation:
+    - text: "Artificial Intelligence explores the development of intelligent systems capable of learning and decision-making. It involves techniques such as machine learning, natural language processing, and computer vision. Please let me know if you want to know about the learning outcome or career future roles!"
+
+  utter_learning_outcomes_ai:
+    - text: "This are few of the AI learning outcomes:
+                \n- Proficiency in machine learning algorithms
+                \n- Ability to develop AI-powered applications
+                \n- Experience with deep learning frameworks"
+
+  utter_career_future_ai:
+    - text: "This are few of the AI future job position:
+                \n- AI Engineer
+                \n- Machine Learning Researcher
+                \n- Data Scientist
+                \n- Robotics Engineer"
 
   utter_goodbye:
-  - text: "Bye"
-
-  utter_iamabot:
-  - text: "I am a bot, powered by Rasa."
+    - text: "Goodbye! Feel free to return whenever you need guidance."
 
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
+
+actions:
+  - utter_greet
+  - utter_goodbye
+  - utter_happy
+  - utter_deny
+  - utter_ask_skills
+  - utter_ask_passions
+  - utter_ask_values
+  - utter_ask_personality
+  - utter_computing_science_branches
+  - utter_data_science_branches
+  - utter_software_development_explanation
+  - utter_data_science_explanation
+  - utter_cybersecurity_explanation
+  - utter_artificial_intelligence_explanation
+  - utter_learning_outcomes_ai
+  - utter_career_future_ai
+
