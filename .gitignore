@@ -14,6 +14,10 @@ logs/
 # Rasa training data
 data/nlu.md
 data/stories.md
-
+.rasa/cache/
 # Rasa environment files
-venv/
+renv/
+.python-version
+
+
+train_model.sh
