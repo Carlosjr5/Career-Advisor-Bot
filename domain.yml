@@ -208,43 +208,7 @@ actions:
   - utter_career_future_sound_design
   - utter_getting_advice
   - utter_default
-  - action_find_career_interest
-  - action_explore_interests
-  - action_ask_about_skills
-  - action_ask_about_passions
-  - action_ask_about_values
-  - action_ask_about_personality
-  - action_cybersecurity 
-  - action_learning_outcomes_cybersecurity
-  - action_career_future_cybersecurity
-  - action_artificial_intelligence
-  - action_learning_outcomes_ai
-  - action_career_future_ai
-  - action_software_development
-  - action_learning_outcomes_software_development
-  - action_career_future_software_development
-  - action_machine_learning
-  - action_learning_outcomes_machine_learning
-  - action_career_future_machine_learning
-  - action_ui_ux
-  - action_learning_outcomes_ui_ux
-  - action_career_future_ui_ux
-  - action_data_scientist
-  - action_learning_outcomes_data_scientist
-  - action_career_future_data_scientist
-  - action_game_development
-  - action_learning_outcomes_game_development
-  - action_career_future_game_development
-  - action_software_testing
-  - action_learning_outcomes_software_testing
-  - action_career_future_software_testing
-  - action_computer_science
-  - action_learning_outcomes_computer_science
-  - action_career_future_computer_science
-  - action_sound_design
-  - action_learning_outcomes_sound_design
-  - action_career_future_sound_design
-  - action_getting_advice
+  
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
