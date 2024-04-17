@@ -1,95 +1,252 @@
 version: "3.1"
 
-
 intents:
   - greet
   - goodbye
   - affirm
   - deny
-  - mood_happy
-  - mood_unhappy
-  - bot_challenge
   - find_career_interest
   - explore_interests
   - ask_about_skills
   - ask_about_passions
   - ask_about_values
   - ask_about_personality
-  - computing_science
-  - software_development
-  - data_science
   - cybersecurity
+  - learning_outcomes_cybersecurity
+  - career_future_cybersecurity
   - artificial_intelligence
   - learning_outcomes_ai
   - career_future_ai
+  - software_development
+  - learning_outcomes_software_development
+  - career_future_software_development
+  - machine_learning
+  - learning_outcomes_machine_learning
+  - career_future_machine_learning
+  - ui_ux
+  - learning_outcomes_ui_ux
+  - career_future_ui_ux
+  - data_scientist
+  - learning_outcomes_data_scientist
+  - career_future_data_scientist
+  - game_development
+  - learning_outcomes_game_development
+  - career_future_game_development
+  - software_testing
+  - learning_outcomes_software_testing
+  - career_future_software_testing
+  - computer_science
+  - learning_outcomes_computer_science
+  - career_future_computer_science
+  - sound_design
+  - learning_outcomes_sound_design
+  - career_future_sound_design
+  - getting_advice
 
 responses:
   utter_greet:
-    - text: "Hello! How can I assist you today?"
-
-  utter_happy:
-    - text: "Great! I'm glad you're feeling good."
+    - text: "Hello! I'm a career advisor. How can I help you today?"
 
   utter_goodbye:
-    - text: "Goodbye! Have a nice day."
+    - text: "Thank you for your time. Have a great day!"
+
+  utter_affirm:
+    - text: "Great! Let's continue exploring your career interests."
+
+  utter_deny:
+    - text: "Okay, no problem. Let me know if you have any other questions."
+
+  utter_find_career_interest:
+    - text: "Sure, I can help you find a career that aligns with your interests and goals. Let's start by discussing what you're passionate about and what kind of work environment you thrive in."
+
+  utter_explore_interests:
+    - text: "Absolutely! Exploring careers based on your interests is a great way to find a fulfilling path. Tell me more about the things you enjoy doing, and I can suggest some potential career options."
+
+  utter_ask_about_skills:
+    - text: "Identifying your skills is crucial for finding the right career fit. Let's discuss the specific skills required for the career you're interested in, and I can provide guidance on how to develop or showcase those skills."
+
+  utter_ask_about_passions:
+    - text: "Turning your passions into a career can be incredibly rewarding. Share with me what you're truly passionate about, and I'll help you explore careers that align with those interests."
+
+  utter_ask_about_values:
+    - text: "Your values play a significant role in finding a fulfilling career. Let's talk about the causes you care about, the impact you want to make, and the work environment that aligns with your values."
+
+  utter_ask_about_personality:
+    - text: "Understanding your personality can help us identify careers that may be a good fit for you. Tell me more about your personality traits, work preferences, and the type of environment you thrive in."
+
+  utter_cybersecurity:
+    - text: "Cybersecurity is a crucial field that focuses on protecting computer systems, networks, and data from unauthorized access, cyber attacks, and other threats. It involves implementing security measures, detecting and responding to incidents, and ensuring the confidentiality, integrity, and availability of digital assets."
+
+  utter_learning_outcomes_cybersecurity:
+    - text: "To pursue a career in cybersecurity, you'll need skills in areas such as network security, cryptography, risk management, ethical hacking, and incident response. Certifications like CompTIA Security+, CISSP, and CEH can also be beneficial."
+
+  utter_career_future_cybersecurity:
+    - text: "The job outlook for cybersecurity professionals is extremely promising. With the increasing reliance on digital technologies and the growing threat of cyber attacks, there is a high demand for skilled cybersecurity experts across various industries."
   
+  utter_artificial_intelligence:
+    - text: "Artificial Intelligence (AI) is the simulation of human intelligence processes by machines, particularly computer systems. AI systems can perform tasks such as learning, reasoning, problem-solving, perception, and language understanding, among others."
+
+  utter_learning_outcomes_ai:
+    - text: "To pursue a career in AI, you'll need a strong foundation in mathematics, statistics, computer science, and programming languages like Python and R. Additionally, knowledge of machine learning algorithms, neural networks, and data analysis is essential. Certifications like the Certified Artificial Intelligence Practitioner (CAIP) or TensorFlow Developer Certificate can also be beneficial."
+
+  utter_career_future_ai:
+    - text: "The field of AI is rapidly growing, and the demand for AI professionals is expected to continue rising. With the increasing adoption of AI technologies across various industries, the career opportunities in this field are promising and diverse."
+
+  utter_software_development:
+    - text: "Software development involves the process of conceiving, designing, programming, documenting, testing, and maintaining software applications and systems. It encompasses various roles, such as software developers, programmers, and software architects."
+
+  utter_learning_outcomes_software_development:
+    - text: "To pursue a career in software development, you'll need proficiency in programming languages like Java, Python, C++, or JavaScript, as well as knowledge of software development methodologies, version control systems, and software testing practices. Certifications like the Certified Software Developer (CSD) or Oracle Certified Professional can be beneficial."
+
+  utter_career_future_software_development:
+    - text: "The job outlook for software developers is very positive, with high demand across various industries. As businesses increasingly rely on software solutions, the need for skilled developers to create and maintain applications will continue to grow."
+
+  utter_machine_learning:
+    - text: "Machine learning is a subset of artificial intelligence that focuses on developing algorithms and statistical models that enable systems to learn from data and make predictions or decisions without being explicitly programmed."
+
+  utter_learning_outcomes_machine_learning:
+    - text: "To pursue a career in machine learning, you'll need a strong foundation in mathematics, statistics, and computer science, as well as proficiency in programming languages like Python and R. Knowledge of machine learning algorithms, data preprocessing techniques, and model evaluation metrics is also essential. Certifications like the AWS Certified Machine Learning Specialty or TensorFlow Developer Certificate can be beneficial."
+
+  utter_career_future_machine_learning:
+    - text: "The field of machine learning is rapidly growing, driven by the increasing availability of data and the need for intelligent systems across various industries. The career opportunities in machine learning are diverse and promising, spanning fields such as finance, healthcare, retail, and more."
+
+  utter_ui_ux:
+    - text: "User Interface (UI) and User Experience (UX) design focuses on creating intuitive and visually appealing interfaces that provide a seamless experience for users interacting with digital products, websites, or applications."
+
+  utter_learning_outcomes_ui_ux:
+    - text: "To pursue a career in UI/UX design, you'll need skills in areas such as user research, wireframing, prototyping, visual design, interaction design, and usability testing. Knowledge of design tools like Sketch, Figma, or Adobe XD is also essential. Certifications like the Certified Professional in User Experience (CPUX) or the Adobe Certified Expert (ACE) can be beneficial."
+
+  utter_career_future_ui_ux:
+    - text: "The demand for UI/UX designers is increasing as businesses recognize the importance of providing exceptional user experiences across digital platforms. With the proliferation of mobile devices and the growing emphasis on user-centered design, the career prospects in UI/UX design are promising."
+
+  utter_data_scientist:
+    - text: "Data science involves extracting insights and knowledge from data using scientific methods, algorithms, and systems. Data scientists collect, process, analyze, and interpret large datasets to uncover patterns, trends, and actionable information that can drive business decisions and strategies."
+
+  utter_learning_outcomes_data_scientist:
+    - text: "To pursue a career in data science, you'll need strong skills in programming languages like Python and R, as well as expertise in statistical modeling, machine learning, data mining, and data visualization. Knowledge of databases, big data tools, and cloud computing platforms is also essential. Certifications like the Certified Data Science Practitioner (CDSP) or the Microsoft Certified: Data Scientist Associate can be beneficial."
+
+  utter_career_future_data_scientist:
+    - text: "The demand for data scientists is growing rapidly across various industries as organizations increasingly recognize the value of data-driven decision-making. With the exponential growth of data and the need for advanced analytical capabilities, the career prospects in data science are promising and diverse."
+
+  utter_game_development:
+    - text: "Game development involves the process of creating interactive games for various platforms, such as consoles, computers, and mobile devices. It combines elements of programming, art, design, and storytelling to create engaging and immersive gaming experiences."
+
+  utter_learning_outcomes_game_development:
+    - text: "To pursue a career in game development, you'll need skills in programming languages like C++, C#, or JavaScript, as well as knowledge of game engines (e.g., Unity, Unreal Engine), game design principles, 3D modeling, and animation. Experience with software development methodologies and version control systems is also beneficial. Certifications like the Certified Unity Developer or the Unreal Engine Developer Certification can be advantageous."
+
+  utter_career_future_game_development:
+    - text: "The gaming industry is rapidly growing, driven by the increasing popularity of video games and the emergence of new platforms and technologies. The career opportunities in game development are diverse, ranging from game programming, game design, art and animation, to audio engineering and quality assurance."
+
+  utter_software_testing:
+    - text: "Software testing is the process of evaluating software applications or systems to identify defects, verify functionality, and ensure quality. It involves various techniques and methodologies to ensure that the software meets the specified requirements and performs as expected."
+
+  utter_learning_outcomes_software_testing:
+    - text: "To pursue a career in software testing, you'll need knowledge of software development life cycles, testing methodologies (e.g., manual testing, automated testing), test case design techniques, and defect tracking tools. Proficiency in programming languages like Java or Python can be beneficial for automation testing. Certifications like the Certified Software Tester (CSTE) or the ISTQB Certified Tester can be advantageous."
+
+  utter_career_future_software_testing:
+    - text: "The demand for software testers is expected to remain strong as organizations continue to recognize the importance of delivering high-quality software products. With the increasing complexity of software systems and the adoption of agile development methodologies, the need for skilled software testers will continue to grow."
+
+  utter_computer_science:
+    - text: "Computer science is the study of computers and computational systems, including their theoretical foundations, hardware and software design, and applications. It encompasses various areas such as algorithms, programming languages, data structures, software engineering, artificial intelligence, and computer systems."
+
+  utter_learning_outcomes_computer_science:
+    - text: "To pursue a career in computer science, you'll need a strong foundation in mathematics, algorithms, data structures, and programming languages like C++, Java, or Python. Knowledge of computer architecture, operating systems, and computer networks is also essential. Certifications like the Certified Computer Professional (CCP) or the Oracle Certified Professional can be beneficial."
+
+  utter_career_future_computer_science:
+    - text: "The field of computer science is constantly evolving, and the career opportunities are diverse and promising. From software development and cybersecurity to artificial intelligence and data science, computer science professionals are in high demand across various industries, including technology, finance, healthcare, and government."
+  
+  utter_sound_design:
+    - text: "Sound design involves the creation, recording, editing, and implementation of audio elements for various media, such as films, video games, and multimedia productions. It combines technical skills with creativity to enhance the overall user experience."
+
+  utter_learning_outcomes_sound_design:
+    - text: "To pursue a career in sound design, you'll need skills in audio production, sound editing software (e.g., Pro Tools, Audition), music theory, foley artistry, and an understanding of acoustics and audio technologies. Knowledge of programming languages like Max/MSP or Pure Data can also be beneficial for creating interactive audio systems."
+
+  utter_career_future_sound_design:
+    - text: "The demand for sound designers is growing, driven by the increasing popularity of multimedia content and the need for immersive audio experiences. Career opportunities exist in various industries, including film, television, video game development, virtual reality, and audio post-production."
+
+  utter_getting_advice:
+    - text: "Absolutely, I'm here to provide guidance and advice on career exploration and development. Please feel free to share your questions or concerns, and I'll do my best to offer insightful and actionable advice."
   utter_default:
     - text: "I'm sorry, As an AI model I couldn't understand your request. I can only provide career advice."
 
-  utter_deny:
-    - text: "I am an AI assistant created by Rasa to help you explore career options."
-
-  utter_ask_skills:
-    - text: "To better understand your interests and suggest suitable careers, please tell me a bit about your skills and strengths."
-
-  utter_ask_passions:
-    - text: "Please share your passions and hobbies with me so I can recommend careers that align with your interests."
-
-  utter_ask_values:
-    - text: "What values are important to you in a career? This will help me suggest options that align with your principles."
-
-  utter_ask_personality:
-    - text: "Can you describe your personality? This will help me recommend careers that suit your traits and work style preferences."
-
-  utter_computing_science_branches:
-    - text: "Computing science encompasses various fields like software engineering, cybersecurity, artificial intelligence, and more. Let me know which area interests you the most."
-
-  utter_software_development_explanation:
-    - text: "Software development involves designing, creating, and maintaining software applications and systems. It requires skills in programming, problem-solving, and understanding user needs."
-
-  utter_data_science_explanation:
-    - text: "Data science involves extracting insights and knowledge from structured and unstructured data using scientific methods, algorithms, and systems. It combines statistics, mathematics, and computer science."
-
-  utter_cybersecurity_explanation:
-    - text: "Cybersecurity focuses on protecting computer systems, networks, and data from unauthorized access, theft, or damage. It involves implementing security measures, detecting threats, and responding to cyber attacks."
-
-  utter_artificial_intelligence_explanation:
-    - text: "Artificial Intelligence (AI) is the development of computer systems capable of performing tasks that typically require human intelligence, such as visual perception, speech recognition, decision-making, and language translation."
-
-  utter_learning_outcomes_ai:
-    - text: "Some key learning outcomes in AI include understanding machine learning algorithms, neural networks, natural language processing, computer vision, and ethical considerations in AI development."
-
-  utter_career_future_ai:
-    - text: "With the rapid growth of AI, there are numerous career opportunities in fields like machine learning engineering, AI research, robotics, and AI product management. The future looks promising for those interested in AI."
-
 actions:
-  - utter_greet
-  - utter_happy
-  - utter_goodbye
-  - utter_deny
-  - utter_ask_skills
-  - utter_ask_passions
-  - utter_ask_values
-  - utter_ask_personality
-  - utter_computing_science_branches
-  - utter_software_development_explanation
-  - utter_data_science_explanation
-  - utter_cybersecurity_explanation
-  - utter_artificial_intelligence_explanation
+  - utter_find_career_interest
+  - utter_explore_interests
+  - utter_ask_about_skills
+  - utter_ask_about_passions
+  - utter_ask_about_values
+  - utter_ask_about_personality
+  - utter_cybersecurity
+  - utter_learning_outcomes_cybersecurity
+  - utter_career_future_cybersecurity
+  - utter_artificial_intelligence
   - utter_learning_outcomes_ai
   - utter_career_future_ai
-
-
+  - utter_software_development
+  - utter_learning_outcomes_software_development
+  - utter_career_future_software_development
+  - utter_machine_learning
+  - utter_learning_outcomes_machine_learning
+  - utter_career_future_machine_learning
+  - utter_ui_ux
+  - utter_learning_outcomes_ui_ux 
+  - utter_career_future_ui_ux
+  - utter_data_scientist
+  - utter_learning_outcomes_data_scientist
+  - utter_career_future_data_scientist
+  - utter_game_development
+  - utter_learning_outcomes_game_development
+  - utter_career_future_game_development
+  - utter_software_testing
+  - utter_learning_outcomes_software_testing
+  - utter_career_future_software_testing
+  - utter_computer_science
+  - utter_learning_outcomes_computer_science
+  - utter_career_future_computer_science
+  - utter_sound_design
+  - utter_learning_outcomes_sound_design
+  - utter_career_future_sound_design
+  - utter_getting_advice
+  - utter_default
+  - action_find_career_interest
+  - action_explore_interests
+  - action_ask_about_skills
+  - action_ask_about_passions
+  - action_ask_about_values
+  - action_ask_about_personality
+  - action_cybersecurity 
+  - action_learning_outcomes_cybersecurity
+  - action_career_future_cybersecurity
+  - action_artificial_intelligence
+  - action_learning_outcomes_ai
+  - action_career_future_ai
+  - action_software_development
+  - action_learning_outcomes_software_development
+  - action_career_future_software_development
+  - action_machine_learning
+  - action_learning_outcomes_machine_learning
+  - action_career_future_machine_learning
+  - action_ui_ux
+  - action_learning_outcomes_ui_ux
+  - action_career_future_ui_ux
+  - action_data_scientist
+  - action_learning_outcomes_data_scientist
+  - action_career_future_data_scientist
+  - action_game_development
+  - action_learning_outcomes_game_development
+  - action_career_future_game_development
+  - action_software_testing
+  - action_learning_outcomes_software_testing
+  - action_career_future_software_testing
+  - action_computer_science
+  - action_learning_outcomes_computer_science
+  - action_career_future_computer_science
+  - action_sound_design
+  - action_learning_outcomes_sound_design
+  - action_career_future_sound_design
+  - action_getting_advice
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
+
+

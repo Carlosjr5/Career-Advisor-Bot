@@ -16,6 +16,35 @@ nlu:
     - good morning
     - good evening
     - good afternoon
+    - Hi
+    - Hey
+    - Heyy
+    - Hi bot
+    - Hey bot
+    - Hello
+    - Good morning
+    - hi again
+    - hi folks
+    - hi Mister
+    - hi pal!
+    - hi there
+    - greetings
+    - hello everybody
+    - hello is anybody there
+    - hello robot
+    - hallo
+    - heeey
+    - hi hi
+    - hey
+    - hey hey
+    - hello there
+    - hi
+    - hello
+    - yo
+    - hola
+    - hi?
+    - hey bot!
+    - hello friend
 
 - intent: goodbye
   examples: |
@@ -38,6 +67,8 @@ nlu:
     - of course
     - that sounds good
     - correct
+    - sure
+    - of course
 
 - intent: deny
   examples: |
@@ -48,48 +79,14 @@ nlu:
     - don't like that
     - no way
     - not really
-
-- intent: mood_happy
-  examples: |
-    - perfect
-    - great
-    - amazing
-    - wonderful
-    - feeling very good
-    - great
-    - amazing
-    - extremely good
-    - good
-
-- intent: mood_unhappy
-  examples: |
-    - my day was horrible
-    - I am sad
-    - I don't feel very well
-    - I am disappointed
-    - super sad
-    - I'm so sad
-    - sad
-    - very sad
-    - unhappy
-    - not good
-    - not very good
-    - extremely sad
-    - so sad
-    - so sad
-
-- intent: bot_challenge
-  examples: |
-    - are you a bot?
-    - are you a human?
-    - am I talking to a bot?
-    - am I talking to a human?
+    - nothing
+    - of course not
 
 - intent: find_career_interest
   examples: |
     - Can you help me find a career?
     - I need assistance in choosing a career.
-    - What career   I pursue?
+    - What career should I pursue?
     - How do I discover my ideal career?
     - I'm unsure about my career path.
     - Can you suggest some careers for me?
@@ -101,7 +98,7 @@ nlu:
     - What careers match my interests?
     - How can I explore career options based on my passions?
     - I want to learn about careers that align with my interests.
-    - What careers   I consider based on my hobbies?
+    - What careers should I consider based on my hobbies?
     - Can you suggest careers that match my interests?
 
 - intent: ask_about_skills
@@ -109,7 +106,7 @@ nlu:
     - What skills are important for a career in [domain]?
     - How do I know if I have the right skills for a certain career?
     - Can you help me identify my skills for a specific career?
-    - What skills   I focus on developing for a career in [domain]?
+    - What skills should I focus on developing for a career in [domain]?
     - How can I improve my skills for a particular career?
 
 - intent: ask_about_passions
@@ -122,7 +119,7 @@ nlu:
 
 - intent: ask_about_values
   examples: |
-    - What values   I consider when choosing a career?
+    - What values should I consider when choosing a career?
     - How do I find a career that aligns with my values?
     - Can you suggest careers that reflect my values?
     - What impact can I make with my career choices?
@@ -136,87 +133,363 @@ nlu:
     - How can I find a career that fits my personality?
     - What work environments are suitable for my personality traits?
 
-- intent: computing_science
-  examples: |
-    - I'm interested in computing science
-    - Computer science sounds fascinating
-    - I want to pursue a career in computing
-    - Computer science is my passion
-    - I'm fascinated by computing science
-    - Computing is my thing
-    - I want to delve into computing science
-    - Exploring the realm of computing science
-    - Computers intrigue me
-    - The world of coding excites me
-    - I'm drawn to computing and technology
-    - I dream of a career in computing science
-    - The possibilities in computing are endless
-    - I see myself as a future computer scientist
-    - Computing is the future
-
-- intent: software_development
-  examples: |
-    - I'm keen on software development
-    - Developing software is my passion
-    - I aspire to be a software developer
-    - Crafting code is what I love
-    - I want to build software applications
-    - The art of coding intrigues me
-    - I see myself as a future software engineer
-    - Software development is where my heart lies
-    - The world of programming excites me
-    - I dream of a career in software development
-    - Developing innovative software solutions
-
-- intent: data_science
-  examples: |
-    - I'm intrigued by data science
-    - Analyzing data is my passion
-    - I aspire to be a data scientist
-    - Making sense of data excites me
-    - I want to delve into data analysis
-    - The power of data fascinates me
-    - I dream of a career in data science
-    - Uncovering insights from data
-    - Data-driven decision-making inspires me
-    - I see myself as a future data analyst
-    - The world of data science is calling me
-
 - intent: cybersecurity
   examples: |
-    - I'm passionate about cybersecurity
-    - Protecting systems is my calling
-    - I aspire to be a cybersecurity expert
-    - Securing networks excites me
-    - I want to defend against cyber threats
-    - The importance of cybersecurity motivates me
-    - I dream of a career in cybersecurity
-    - Ensuring digital safety is my goal
-    - Cybersecurity is critical in today's world
-    - I see myself as a future cybersecurity professional
-    - The challenges of cybersecurity intrigue me
-    - How do I start a career in cybersecurity
+    - I am interested in cybersecurity
+    - I want to work in cybersecurity and protect systems from threats
+    - Securing networks and data is something I'm passionate about
+    - I'm drawn to roles that involve cybersecurity
+    - I want to learn how to defend against cyber attacks
+    - Protecting information from hackers excites me
+    - I want to ensure the security and privacy of digital assets
+    - Cybersecurity and ethical hacking are areas I want to explore
+    - I see myself analyzing security threats and implementing countermeasures
+    - I want to be involved in incident response and threat detection
+    - Tell me about cybersecurity
+    - Tell me about the importance of cybersecurity in today's world.
+    - What are the challenges faced in cybersecurity?
+    - How is the career growth potential in cybersecurity?
+    - What are the long-term prospects for cybersecurity professionals?
+    - Can you explain the responsibilities of a cybersecurity analyst?
+    - Tell me about the duties of a cybersecurity engineer.
+    - What certifications are beneficial for a career in cybersecurity?
+    - What are the prerequisites for becoming a Certified Ethical Hacker (CEH)?
+    - How do I improve my skills for a career in cybersecurity?
+
+- intent: learning_outcomes_cybersecurity
+  examples: |
+    - I'm considering a career change to cybersecurity. Where should I start?
+    - What skills are required for a career in cybersecurity?
+    - How do I start learning for cybersecurity?
+    - Tell me the learning outcomes of cybersecurity?
+
+- intent: career_future_cybersecurity
+  examples: |
+    - Can you recommend certifications for cybersecurity careers?
+    - Tell me more about cybersecurity career paths.
+    - I want to learn about cybersecurity job roles.
+    - What are the job opportunities like in cybersecurity?
+    - Can you provide information about careers in cybersecurity?
+    - What is the career future for cybersecurity
+    - What are the career prospects like for someone with skills in cybersecurity?
 
 - intent: artificial_intelligence
   examples: |
-    - I'm captivated by artificial intelligence
-    - Creating intelligent systems is my passion
-    - I aspire to work in artificial intelligence
-    - Harnessing the power of AI excites me
-    - I want to explore machine learning and neural networks
-    - The potential of AI inspires me
-    - I dream of a career in artificial intelligence
-    - Building AI-driven applications is my goal
-    - AI is shaping the future of technology
-    - I see myself as a future AI researcher
-    - The possibilities of artificial intelligence are endless
+    - I am interested in artificial intelligence
+    - I want to work with AI technologies and algorithms
+    - Developing intelligent systems excites me
+    - I'm drawn to roles that involve artificial intelligence
+    - I want to learn about machine learning, neural networks, and deep learning
+    - Creating AI-driven applications is something I'm passionate about
+    - I want to explore natural language processing and computer vision
+    - AI and robotics are areas I want to explore
+    - I see myself researching and developing AI solutions to solve complex problems
+    - I want to be involved in AI ethics and responsible AI development
+    - Explain artificial intelligence to me
+    - I'm interested in pursuing a career in artificial intelligence.
+    - Can you provide information about careers in artificial intelligence?
+    - What are the long-term prospects for AI professionals?
 
 - intent: learning_outcomes_ai
   examples: |
-    - Which are the learning outcomes of ai?
+    - I'm considering a career change to artificial intelligence. Where should I start?
+    - What skills are required for a career in ai?
+    - How do I start learning for ai?
+    - Tell me the learning outcomes of ai?
+    - Can you recommend certifications for AI careers?
 
 - intent: career_future_ai
   examples: |
-    - Which role could i be on?
-    - What is the career future 
+    - How is the career growth potential in artificial intelligence?
+    - I am exploring career options in artificial intelligence
+    - What are the job opportunities like in artificial intelligence?
+    - Tell me more about artificial intelligence career paths.
+    - I want to learn about AI job roles.
+    - What skills are required for a career in artificial intelligence?
 
+- intent: software_development
+  examples: |
+    - I am interested in software development
+    - I want to work as a software developer and write code
+    - Developing software applications excites me
+    - I'm drawn to roles that involve software development
+    - I want to learn programming languages like Python, Java, or JavaScript
+    - Building scalable and user-friendly software is something I'm passionate about
+    - Software development and software architecture are areas I want to explore
+    - I see myself designing and implementing software solutions to solve problems
+    - I want to be involved in the full software development lifecycle
+    - I want to design and write codes to create something
+    - How do I transition into a career in DevOps?
+    - How does software development work?
+    - What are the long-term prospects for software developers?
+
+- intent: learning_outcomes_software_development
+  examples: |
+    - I'm considering a career change to software development. Where should I start?
+    - What skills are required for a career in software development?
+    - How do I start learning for software development?
+    - Tell me the learning outcomes of software development?
+    - Can you recommend certifications for software development careers?
+
+- intent: career_future_software_development
+  examples: |
+    - How is the career growth potential in software development?
+    - I'm interested in pursuing a career in software development.
+    - Can you provide information about careers in software development?
+    - What are the job opportunities like in software development?
+    - Tell me more about software development career paths.
+    - I want to learn about software development job roles.
+
+- intent: machine_learning
+  examples: |
+    - I am interested in machine learning
+    - I want to work with machine learning algorithms and models
+    - Developing predictive models excites me
+    - I'm drawn to roles that involve machine learning
+    - I want to learn about machine learning techniques like regression, classification, and clustering
+    - Building intelligent systems and making predictions is something I'm passionate about
+    - I want to work on machine learning projects and analyze data
+    - Machine learning algorithms and neural networks are areas I want to explore
+    - I see myself developing and deploying machine learning solutions to solve real-world problems
+    - I want to be involved in machine learning research and innovation
+    - Tell me about machine learning
+    - I'm interested in pursuing a career in machine learning. 
+    - How is the career growth potential in machine learning?
+    - What are the long-term prospects for machine learning engineers?
+
+- intent: learning_outcomes_machine_learning
+  examples: |
+    - What skills are required for a career in machine learning?
+    - Can you recommend certifications for machine learning careers?
+    - I'm considering a career change to machine learning. Where should I start?
+    - Can you recommend certifications for machine learning careers?
+    - How do I start learning for machine learning?
+    - Tell me the learning outcomes of machine learning?
+
+- intent: career_future_machine_learning
+  examples: |
+    - Tell me about career opportunities in machine learning
+    - Can you provide information about careers in machine learning?
+    - What are the job opportunities like in machine learning?
+    - Tell me more about machine learning career paths.
+    - I want to learn about machine learning job roles.
+
+- intent: ui_ux
+  examples: |
+    - I am interested in UI/UX design
+    - I want to work in UI/UX and create intuitive user experiences
+    - Designing user interfaces and improving user experiences excites me
+    - I'm drawn to roles that involve UI/UX design
+    - I want to learn about user-centered design principles and usability testing
+    - Creating wireframes, prototypes, and mockups is something I'm passionate about
+    - I want to work on UI/UX projects and collaborate with designers and developers
+    - UI/UX design and interaction design are areas I want to explore
+    - I see myself designing user-friendly interfaces and conducting user research
+    - I want to be involved in UI/UX research and user testing
+    - I am only interesting in designing
+    - I am very imaginitive
+    - I want to explore more about design
+    - I want to give a user a good experience
+    - How do I become a UX/UI designer
+    - Explain UI/UX design
+    - I'm interested in pursuing a career in UI/UX design.
+    - How is the career growth potential in UI/UX?
+    - What are the long-term prospects for UI/UX designers?
+
+
+- intent: learning_outcomes_ui_ux
+  examples: |
+    - What skills are required for a career in UX/UX?
+    - How do I start learning for UI/UX?
+    - Tell me the learning outcomes of UI/UX?
+    - I'm considering a career change to UI/UX. Where should I start?
+    - What skills are required for a career in UI/UX design?
+    - Can you recommend certifications for UI/UX careers?
+
+- intent: career_future_ui_ux
+  examples: |
+    - Can you provide information about careers in UI/UX?
+    - What are the job opportunities like in UI/UX design?
+    - Tell me more about UI/UX career paths.
+    - I want to learn about UI/UX job roles.
+
+
+
+- intent: data_scientist
+  examples: |
+    - I am interested in becoming a data scientist
+    - I want to work as a data scientist and analyze data to derive insights
+    - Applying machine learning algorithms to solve data problems excites me
+    - I'm drawn to roles that involve data science
+    - I want to learn about data analysis, statistical modeling, and predictive analytics
+    - Extracting actionable insights from data and building predictive models is something I'm passionate about
+    - I want to work on data science projects and collaborate with data engineers and analysts
+    - Data science and data visualization are areas I want to explore
+    - I see myself analyzing complex datasets and developing data-driven solutions to business problems
+    - I want to be involved in data storytelling, data-driven decision-making, and data-driven product development
+    - How do I become a data scientist
+    - What is a data scientist?
+    - I'm interested in pursuing a career in data science.
+    - How is the career growth potential in data science?
+    - What are the long-term prospects for data scientists?
+
+- intent: learning_outcomes_data_scientist
+  examples: |
+    - What skills are required for a career in data science?
+    - Can you recommend certifications for data science careers?
+    - I'm considering a career change to data science. Where should I start?
+    - How do I start learning for data science?
+    - Tell me the learning outcomes of data science?
+
+- intent: career_future_data_scientist
+  examples: |
+    - Can you provide information about careers in data science?
+    - What are the job opportunities like in data science?
+    - Tell me more about data science career paths.
+    - I want to learn about data science job roles.
+
+- intent: game_development
+  examples: |
+    - I am interested in game development
+    - I want to work as a game developer and create interactive experiences
+    - Developing games and bringing ideas to life excites me
+    - I'm drawn to roles that involve game development
+    - I want to learn about game design, game engines, and game mechanics
+    - Creating immersive gameplay and captivating storylines is something I'm passionate about
+    - I want to work on game development projects and collaborate with artists, designers, and programmers
+    - Game design and game programming are areas I want to explore
+    - I see myself designing game levels, implementing game mechanics, and optimizing game performance
+    - I want to be involved in game testing, debugging, and game publishing
+    - How can I get into game development?
+    - I'm interested in pursuing a career in game development.
+    - How is the career growth potential in game development?
+    - What are the long-term prospects for game developers?
+
+- intent: learning_outcomes_game_development
+  examples: |
+    - What skills are required for a career in game development?
+    - Can you recommend certifications for game development careers?
+    - I'm considering a career change to game development. Where should I start?
+    - How do I start learning for game development?
+    - Tell me the learning outcomes of game development?
+
+- intent: career_future_game_development
+  examples: |
+    - Can you provide information about careers in game development?
+    - What are the job opportunities like in game development?
+    - Tell me more about game development career paths.
+    - I want to learn about game development job roles.
+
+- intent: software_testing
+  examples: |
+    - I am interested in software testing
+    - I want to work in software testing and ensure the quality of software products
+    - Testing software applications and finding bugs excites me
+    - I'm drawn to roles that involve software testing
+    - I want to learn about software testing methodologies, test automation, and quality assurance processes
+    - Writing test cases, executing test plans, and reporting defects is something I'm passionate about
+    - I want to work on software testing projects and collaborate with developers and QA engineers
+    - Software testing and test automation are areas I want to explore
+    - I see myself designing and implementing test strategies, performing regression testing, and ensuring software reliability
+    - I want to be involved in continuous integration, continuous deployment, and agile testing practices
+    - I want to work for quality assurance role
+    - I want to ensure the quality of the software
+    - I want to test the finish product
+    - I am interested in software testing careers.
+    - I'm interested in pursuing a career in software testing.
+    - How is the career growth potential in software testing?
+    - What are the long-term prospects for software testers?
+
+- intent: learning_outcomes_software_testing
+  examples: |
+    - What skills are required for a career in software testing?
+    - Can you recommend certifications for software testing careers?
+    - I'm considering a career change to software testing. Where should I start?
+    - How do I start learning for software testing?
+    - Tell me the learning outcomes of software testing?
+
+- intent: career_future_software_testing
+  examples: |
+    - Can you provide information about careers in software testing?
+    - What are the job opportunities like in software testing?
+    - Tell me more about software testing career paths.
+    - I want to learn about software testing job roles.
+
+- intent: computer_science
+  examples: |
+    - I am interested in computer science
+    - I want to study computer science and learn about algorithms and data structures
+    - Programming and problem-solving excite me
+    - I'm drawn to roles that involve computer science
+    - I want to learn about computer architecture, software engineering, and artificial intelligence
+    - Developing software applications and exploring new technologies is something I'm passionate about
+    - I want to work on computer science projects and collaborate with computer scientists and engineers
+    - Computer science research and innovation are areas I want to explore
+    - I see myself designing algorithms, developing software systems, and contributing to computer science advancements
+    - I want to be involved in coding competitions, hackathons, and open-source projects
+    - What career paths are there in computer science
+    - Explain computer science to me
+    - I'm interested in pursuing a career in computer science.
+    - How is the career growth potential in computer science?
+    - What are the long-term prospects for computer scientists?
+
+- intent: learning_outcomes_computer_science
+  examples: |
+    - What skills are required for a career in computer science?
+    - Can you recommend certifications for computer science careers?
+    - I'm considering a career change to computer science. Where should I start?
+    - How do I start learning for computer science?
+    - Tell me the learning outcomes of computer science?
+
+- intent: career_future_computer_science
+  examples: |
+    - Can you provide information about careers in computer science?
+    - What are the job opportunities like in computer science?
+    - Tell me more about computer science career paths.
+    - I want to learn about computer science job roles.
+
+- intent: sound_design
+  examples: |
+    - I am interested in sound design
+    - I want to work in sound design and create immersive audio experiences
+    - Designing sound effects and mixing audio excites me
+    - I'm drawn to roles that involve sound design
+    - I want to learn about sound editing software, Foley artistry, and audio production techniques
+    - Creating music compositions and soundscapes is something I'm passionate about
+    - I want to work on sound design projects and collaborate with filmmakers, game developers, and multimedia artists
+    - Sound design for film, games, and virtual reality are areas I want to explore
+    - I see myself recording and editing sound, designing soundtracks, and implementing audio in multimedia projects
+    - I want to be involved in audio post-production, sound synthesis, and spatial audio technologies
+    - Tell me about sound design opportunities
+    - Tell me about sound design
+    - Tell me the relation of sound and computing
+    - I'm interested in pursuing a career in sound design.
+    - How is the career growth potential in sound design?
+    - What are the long-term prospects for sound designers?
+
+- intent: learning_outcomes_sound_design
+  examples: |
+    - What skills are required for a career in sound design?
+    - Can you recommend certifications for sound design careers?
+    - I'm considering a career change to sound design. Where should I start?
+    - How do I start learning for sound design?
+    - Tell me the learning outcomes of sound design?
+
+- intent: career_future_sound_design
+  examples: |
+    - Can you provide information about careers in sound design?
+    - What are the job opportunities like in sound design?
+    - Tell me more about sound design career paths.
+    - I want to learn about sound design job roles.
+
+- intent: getting_advice
+  examples: |
+    - I am looking to get an advice.
+    - Can you give me some advice?
+    - I want to get some advice?
+    - Advice Please.
+    - Getting some advice?
+    - Help me by giving advice?
+    - I would appreciate to get some advice?
+    - Will you give me some advice?
+    - I want an advice

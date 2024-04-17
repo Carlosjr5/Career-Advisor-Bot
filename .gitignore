@@ -15,6 +15,7 @@ logs/
 data/nlu.md
 data/stories.md
 .rasa/cache/
+
 # Rasa environment files
 renv/
 .python-version
