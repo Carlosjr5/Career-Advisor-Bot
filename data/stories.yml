@@ -2,207 +2,67 @@ version: "3.1"
 
 stories:
 
-- story: greet
+- story: happy path
   steps:
   - intent: greet
   - action: utter_greet
+  - intent: mood_happy
+  - action: utter_happy
 
-- story: goodbye
-  steps:
-  - intent: goodbye
-  - action: utter_goodbye
-
-- story: affirm
-  steps:
-  - intent: affirm
-  - action: utter_affirm
-
-- story: deny
-  steps:
-  - intent: deny
-  - action: utter_deny
-
-- story: find_career_interest
+- story: getting to know the user
   steps:
   - intent: find_career_interest
-  - action: utter_find_career_interest
-
-- story: explore_interests
-  steps:
+  - action: utter_ask_skills
   - intent: explore_interests
-  - action: utter_explore_interests
-
-- story: ask_about_skills
-  steps:
+  - action: utter_ask_passions
   - intent: ask_about_skills
-  - action: utter_ask_about_skills
-
-- story: ask_about_passions
-  steps:
-  - intent: ask_about_passions
-  - action: utter_ask_about_passions
-
-- story: ask_about_values
-  steps:
-  - intent: ask_about_values
-  - action: utter_ask_about_values
-
-- story: ask_about_personality
-  steps:
+  - action: utter_ask_skills
   - intent: ask_about_personality
-  - action: utter_ask_about_personality
+  - action: utter_ask_personality
 
-- story: cybersecurity
+
+- story: User expresses interest in computing science
   steps:
-  - intent: cybersecurity
-  - action: utter_cybersecurity
+    - intent: computing_science
+    - action: utter_computing_science_explanation
+    - intent: learning_outcomes_computing_science
+    - action: utter_learning_outcomes_computing_science
+    - intent: career_future_computing_science
+    - action: utter_career_future_computing_science
 
-- story: learning_outcomes_cybersecurity
-  steps:
-  - intent: learning_outcomes_cybersecurity
-  - action: utter_learning_outcomes_cybersecurity
 
-- story: career_future_cybersecurity
-  steps:
-  - intent: career_future_cybersecurity
-  - action: utter_career_future_cybersecurity
-
-- story: artificial_intelligence
+- story: user expresses interest in artificial intelligence
   steps:
   - intent: artificial_intelligence
-  - action: utter_artificial_intelligence
-
-- story: learning_outcomes_ai
-  steps:
+  - action: utter_artificial_intelligence_explanation
   - intent: learning_outcomes_ai
   - action: utter_learning_outcomes_ai
-
-- story: career_future_ai
-  steps:
   - intent: career_future_ai
   - action: utter_career_future_ai
 
-- story: software_development
+- story: User expresses interest in cybersecurity
   steps:
-  - intent: software_development
-  - action: utter_software_development
+    - intent: cybersecurity
+    - action: utter_cybersecurity_explanation
+    - intent: learning_outcomes_cybersecurity
+    - action: utter_learning_outcomes_cybersecurity
+    - intent: career_future_cybersecurity
+    - action: utter_career_future_cybersecurity
 
-- story: learning_outcomes_software_development
+- story: User expresses interest in software development
   steps:
-  - intent: learning_outcomes_software_development
-  - action: utter_learning_outcomes_software_development
-
-- story: career_future_software_development
+    - intent: software_development
+    - action: utter_software_development_explanation
+    - intent: learning_outcomes_software_development
+    - action: utter_learning_outcomes_software_development
+    - intent: career_future_software_development
+    - action: utter_career_future_software_development
+    
+- story: User expresses interest in data science
   steps:
-  - intent: career_future_software_development
-  - action: utter_career_future_software_development
-
-- story: machine_learning
-  steps:
-  - intent: machine_learning
-  - action: utter_machine_learning
-
-- story: learning_outcomes_machine_learning
-  steps:
-  - intent: learning_outcomes_machine_learning
-  - action: utter_learning_outcomes_machine_learning
-
-- story: career_future_machine_learning
-  steps:
-  - intent: career_future_machine_learning
-  - action: utter_career_future_machine_learning
-
-- story: ui_ux
-  steps:
-  - intent: ui_ux
-  - action: utter_ui_ux
-
-- story: learning_outcomes_ui_ux
-  steps:
-  - intent: learning_outcomes_ui_ux
-  - action: utter_learning_outcomes_ui_ux
-
-- story: career_future_ui_ux
-  steps:
-  - intent: career_future_ui_ux
-  - action: utter_career_future_ui_ux
-
-- story: data_scientist
-  steps:
-  - intent: data_scientist
-  - action: utter_data_scientist
-
-- story: learning_outcomes_data_scientist
-  steps:
-  - intent: learning_outcomes_data_scientist
-  - action: utter_learning_outcomes_data_scientist
-
-- story: career_future_data_scientist
-  steps:
-  - intent: career_future_data_scientist
-  - action: utter_career_future_data_scientist
-
-- story: game_development
-  steps:
-  - intent: game_development
-  - action: utter_game_development
-
-- story: learning_outcomes_game_development
-  steps:
-  - intent: learning_outcomes_game_development
-  - action: utter_learning_outcomes_game_development
-
-- story: career_future_game_development
-  steps:
-  - intent: career_future_game_development
-  - action: utter_career_future_game_development
-
-- story: software_testing
-  steps:
-  - intent: software_testing
-  - action: utter_software_testing
-
-- story: learning_outcomes_software_testing
-  steps:
-  - intent: learning_outcomes_software_testing
-  - action: utter_learning_outcomes_software_testing
-
-- story: career_future_software_testing
-  steps:
-  - intent: career_future_software_testing
-  - action: utter_career_future_software_testing
-
-- story: computer_science
-  steps:
-  - intent: computer_science
-  - action: utter_computer_science
-
-- story: learning_outcomes_computer_science
-  steps:
-  - intent: learning_outcomes_computer_science
-  - action: utter_learning_outcomes_computer_science
-
-- story: career_future_computer_science
-  steps:
-  - intent: career_future_computer_science
-  - action: utter_career_future_computer_science
-
-- story: sound_design
-  steps:
-  - intent: sound_design
-  - action: utter_sound_design
-
-- story: learning_outcomes_sound_design
-  steps:
-  - intent: learning_outcomes_sound_design
-  - action: utter_learning_outcomes_sound_design
-
-- story: career_future_sound_design
-  steps:
-  - intent: career_future_sound_design
-  - action: utter_career_future_sound_design
-
-- story: getting_advice
-  steps:
-  - intent: getting_advice
-  - action: utter_getting_advice
+    - intent: data_science
+    - action: utter_data_science_explanation
+    - intent: learning_outcomes_data_science
+    - action: utter_learning_outcomes_data_science
+    - intent: career_future_data_science
+    - action: utter_career_future_data_science

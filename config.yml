@@ -22,7 +22,7 @@ pipeline:
     min_ngram: 1
     max_ngram: 2
   - name: DIETClassifier
-    epochs: 200
+    epochs: 100
     random_seed: 42
     constrain_similarities: true
   - name: ResponseSelector
@@ -36,8 +36,10 @@ policies:
   - name: RulePolicy
   - name: TEDPolicy
     max_history: 10
-    epochs: 300
+    epochs: 100
     constrain_similarities: true
+
+fallback_action_name: "action_gpt3_fallback"
 
 
 # # No configuration for policies was provided. The following default policies were used to train your model.

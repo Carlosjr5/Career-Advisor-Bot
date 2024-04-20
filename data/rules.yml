@@ -1,254 +1,86 @@
 version: "3.1"
 
 rules:
-
-# Rule for greeting
-- rule: Respond to greetings
+- rule: Respond to greeting
   steps:
-    - intent: greet
-    - action: utter_greet
+  - intent: greet
+  - action: utter_greet
 
-# Rule for goodbye
-- rule: Respond to goodbyes
+- rule: Respond to happy
   steps:
-    - intent: goodbye
-    - action: utter_goodbye
+  - intent: mood_happy
+  - action: utter_happy
 
-# Rule for affirmations
-- rule: Respond to affirmations
+- rule: Respond to goodbye
   steps:
-    - intent: affirm
-    - action: utter_affirm
+  - intent: goodbye
+  - action: utter_goodbye
 
-# Rule for denials
-- rule: Respond to denials
-  steps:
-    - intent: deny
-    - action: utter_deny
 
-# Rule for finding career interests
-- rule: Help find career interests
+- rule: Respond to bot challenge
   steps:
-    - intent: find_career_interest
-    - action: utter_find_career_interest
+  - intent: bot_challenge
+  - action: utter_deny
 
-# Rule for exploring interests
-- rule: Explore interests for career
+- rule: Find career interest
   steps:
-    - intent: explore_interests
-    - action: utter_explore_interests
+  - intent: find_career_interest
+  - action: utter_ask_skills
+  - active_loop: utter_ask_skills
 
-# Rule for asking about skills
-- rule: Provide information about skills
+- rule: Explore interests
   steps:
-    - intent: ask_about_skills
-    - action: utter_ask_about_skills
+  - intent: explore_interests
+  - action: utter_ask_passions
+  - active_loop: utter_ask_passions
 
-# Rule for asking about passions
-- rule: Discuss passions for careers
+- rule: Ask about skills
   steps:
-    - intent: ask_about_passions
-    - action: utter_ask_about_passions
+  - intent: ask_about_skills
+  - action: utter_ask_skills
+  - active_loop: utter_ask_skills
 
-# Rule for asking about values
-- rule: Explore career values
+- rule: Ask about passions
   steps:
-    - intent: ask_about_values
-    - action: utter_ask_about_values
+  - intent: ask_about_passions
+  - action: utter_ask_passions
+  - active_loop: utter_ask_passions
 
-# Rule for asking about personality
-- rule: Consider personality for careers
+- rule: Ask about values
   steps:
-    - intent: ask_about_personality
-    - action: utter_ask_about_personality
+  - intent: ask_about_values
+  - action: utter_ask_values
+  - active_loop: utter_ask_values
 
-# Rule for cybersecurity interest
-- rule: Provide cybersecurity information
+- rule: Ask about personality
   steps:
-    - intent: cybersecurity
-    - action: utter_cybersecurity
+  - intent: ask_about_personality
+  - action: utter_ask_personality
+  - active_loop: utter_ask_personality
 
-# Rule for cybersecurity learning outcomes
-- rule: Provide cybersecurity learning outcomes
-  steps:
-    - intent: learning_outcomes_cybersecurity
-    - action: utter_learning_outcomes_cybersecurity
 
-# Rule for cybersecurity career future
-- rule: Provide cybersecurity career future
-  steps:
-    - intent: career_future_cybersecurity
-    - action: utter_career_future_cybersecurity
 
-# Rule for artificial intelligence interest
-- rule: Provide artificial intelligence information
+- rule: Respond to software development interest
   steps:
-    - intent: artificial_intelligence
-    - action: utter_artificial_intelligence
+  - intent: software_development
+  - action: utter_software_development_explanation
 
-# Rule for artificial intelligence learning outcomes
-- rule: Provide artificial intelligence learning outcomes
+- rule: Respond to data science interest
   steps:
-    - intent: learning_outcomes_ai
-    - action: utter_learning_outcomes_ai
+  - intent: data_science
+  - action: utter_data_science_explanation
 
-# Rule for artificial intelligence career future
-- rule: Provide artificial intelligence career future
+- rule: Respond to cybersecurity interest
   steps:
-    - intent: career_future_ai
-    - action: utter_career_future_ai
+  - intent: cybersecurity
+  - action: utter_cybersecurity_explanation
 
-# Rule for software development interest
-- rule: Provide software development information
+- rule: Respond to artificial intelligence interest
   steps:
-    - intent: software_development
-    - action: utter_software_development
+  - intent: artificial_intelligence
+  - action: utter_artificial_intelligence_explanation
 
-# Rule for software development learning outcomes
-- rule: Provide software development learning outcomes
-  steps:
-    - intent: learning_outcomes_software_development
-    - action: utter_learning_outcomes_software_development
-
-# Rule for software development career future
-- rule: Provide software development career future
-  steps:
-    - intent: career_future_software_development
-    - action: utter_career_future_software_development
-
-# Rule for machine learning interest
-- rule: Provide machine learning information
-  steps:
-    - intent: machine_learning
-    - action: utter_machine_learning
-
-# Rule for machine learning learning outcomes
-- rule: Provide machine learning learning outcomes
-  steps:
-    - intent: learning_outcomes_machine_learning
-    - action: utter_learning_outcomes_machine_learning
-
-# Rule for machine learning career future
-- rule: Provide machine learning career future
-  steps:
-    - intent: career_future_machine_learning
-    - action: utter_career_future_machine_learning
-
-# Rule for UI/UX interest
-- rule: Provide UI/UX information
-  steps:
-    - intent: ui_ux
-    - action: utter_ui_ux
-
-# Rule for UI/UX learning outcomes
-- rule: Provide UI/UX learning outcomes
-  steps:
-    - intent: learning_outcomes_ui_ux
-    - action: utter_learning_outcomes_ui_ux
-
-# Rule for UI/UX career future
-- rule: Provide UI/UX career future
-  steps:
-    - intent: career_future_ui_ux
-    - action: utter_career_future_ui_ux
-
-# Rule for data scientist interest
-- rule: Provide data scientist information
-  steps:
-    - intent: data_scientist
-    - action: utter_data_scientist
-
-# Rule for data scientist learning outcomes
-- rule: Provide data scientist learning outcomes
-  steps:
-    - intent: learning_outcomes_data_scientist
-    - action: utter_learning_outcomes_data_scientist
-
-# Rule for data scientist career future
-- rule: Provide data scientist career future
-  steps:
-    - intent: career_future_data_scientist
-    - action: utter_career_future_data_scientist
-
-# Rule for game development interest
-- rule: Provide game development information
-  steps:
-    - intent: game_development
-    - action: utter_game_development
-
-# Rule for game development learning outcomes
-- rule: Provide game development learning outcomes
-  steps:
-    - intent: learning_outcomes_game_development
-    - action: utter_learning_outcomes_game_development
-
-# Rule for game development career future
-- rule: Provide game development career future
-  steps:
-    - intent: career_future_game_development
-    - action: utter_career_future_game_development
-
-# Rule for software testing interest
-- rule: Provide software testing information
-  steps:
-    - intent: software_testing
-    - action: utter_software_testing
-
-# Rule for software testing learning outcomes
-- rule: Provide software testing learning outcomes
-  steps:
-    - intent: learning_outcomes_software_testing
-    - action: utter_learning_outcomes_software_testing
-
-# Rule for software testing career future
-- rule: Provide software testing career future
-  steps:
-    - intent: career_future_software_testing
-    - action: utter_career_future_software_testing
-
-# Rule for computer science interest
-- rule: Provide computer science information
-  steps:
-    - intent: computer_science
-    - action: utter_computer_science
-
-# Rule for computer science learning outcomes
-- rule: Provide computer science learning outcomes
-  steps:
-    - intent: learning_outcomes_computer_science
-    - action: utter_learning_outcomes_computer_science
-
-# Rule for computer science career future
-- rule: Provide computer science career future
-  steps:
-    - intent: career_future_computer_science
-    - action: utter_career_future_computer_science
-
-# Rule for sound design interest
-- rule: Provide sound design information
-  steps:
-    - intent: sound_design
-    - action: utter_sound_design
-
-# Rule for sound design learning outcomes
-- rule: Provide sound design learning outcomes
-  steps:
-    - intent: learning_outcomes_sound_design
-    - action: utter_learning_outcomes_sound_design
-
-# Rule for sound design career future
-- rule: Provide sound design career future
-  steps:
-    - intent: career_future_sound_design
-    - action: utter_career_future_sound_design
-
-# Rule for getting advice
-- rule: Provide career advice
-  steps:
-    - intent: getting_advice
-    - action: utter_getting_advice
-    
 - rule: Handle out-of-scope input
   steps:
-    - intent: nlu_fallback
-    - action: utter_default
+  - intent: nlu_fallback
+  - action: utter_default
