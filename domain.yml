@@ -11,16 +11,34 @@ intents:
   - bot_challenge
   - topics
   - freQ
+  - topic_info:
+       use_entities: [topic]
+  - inquire_topic_information:
+      use_entities: [topic]
 
+entities:
+  - topic
 
 slots:
   results:
     type: text
     mappings:
-    - type: custom
-      action: action_show_topics
-    - type: custom
-      action: action_show_freQ
+      - type: custom
+        action: action_show_topics
+      - type: custom
+        action: action_show_freQ
+      - type: custom
+        action: action_show_topic_info
+
+  topic:
+    type: text
+    influence_conversation: false
+    mappings:
+      - type: from_entity
+        entity: topic
+
+
+
 
 
 
@@ -46,9 +64,12 @@ responses:
   utter_iamabot:
   - text: "I am a bot, powered by Rasa."
 
+  utter_ask_topic:
+  - text: "Which topic are you interested in?"
 actions:
   - action_show_topics
   - action_show_freQ
+  - action_show_topic_info
 
 session_config:
   session_expiration_time: 60

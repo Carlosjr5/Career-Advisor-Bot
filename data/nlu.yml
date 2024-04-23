@@ -63,3 +63,32 @@ nlu:
     - What are common questions about topics?
     - Show frequently asked questions
     - What do people usually ask about?
+
+- intent: topic_info
+  examples: |
+    - Tell me more about [cybersecurity](topic)
+    - I want information on [data analysis](topic)
+    - Can you provide details about [software engineering](topic)?
+    - What can you tell me about [cloud computing](topic)?
+    - Explain [artificial intelligence](topic) to me
+    - I need details on [mobile app development](topic)
+    - I'm interested in learning more about [product management](topic)
+    - Show info on [machine learning](topic)
+    
+
+- intent: inquire_topic_information
+  examples: |
+    - Tell me about [cybersecurity](topic).
+    - I want to know more about [data analysis](topic).
+    - Can you provide information on [artificial intelligence](topic)?
+    - What do you know about [software engineering](topic)?
+    - Explain [cloud computing](topic) to me.
+    - Details about [machine learning](topic), please.
+    - I'm interested in [mobile app development](topic).
+    - Provide insights on [database](topic) management.
+    - How do I start a career in [cybersecurity](topic)?
+    - What can you tell me about [data science](topic)?
+    - I need information on [IT management](topic).
+    - Discuss the [UI/UX](topic) field.
+    - Explain the basics of [product management](topic).
+    - I am curious about careers in [artificial intelligence](topic).

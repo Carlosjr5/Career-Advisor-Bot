@@ -21,3 +21,12 @@ rules:
   - intent: freQ
   - action: action_show_freQ
 
+- rule: show topic info
+  steps:
+  - intent: topic_info
+  - action: action_show_topic_info
+
+- rule: show topic info
+  steps:
+  - intent: inquire_topic_information
+  - action: action_show_topic_info
