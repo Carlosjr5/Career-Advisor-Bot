@@ -6,89 +6,49 @@ intents:
   - goodbye
   - affirm
   - deny
-  - mood_happy
+  - mood_great
   - mood_unhappy
   - bot_challenge
-  - find_career_interest
-  - explore_interests
-  - ask_about_skills
-  - ask_about_passions
-  - ask_about_values
-  - ask_about_personality
-  - computing_science
-  - software_development
-  - data_science
-  - cybersecurity
-  - artificial_intelligence
-  - learning_outcomes_ai
-  - career_future_ai
+  - topics
+  - freQ
+
+
+slots:
+  results:
+    type: text
+    mappings:
+    - type: custom
+      action: action_show_topics
+    - type: custom
+      action: action_show_freQ
+
+
+
 
 responses:
   utter_greet:
-    - text: "Hello! How can I assist you today?"
+  - text: "Hey! How are you?
+          \nHow can I help you today finding your future pathway in the Computing Science Industry?"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
 
   utter_happy:
-    - text: "Great! I'm glad you're feeling good."
+  - text: "Great, carry on!"
 
   utter_goodbye:
-    - text: "Goodbye! Have a nice day."
-  
-  utter_default:
-    - text: "I'm sorry, As an AI model I couldn't understand your request. I can only provide career advice."
+  - text: "Bye"
 
-  utter_deny:
-    - text: "I am an AI assistant created by Rasa to help you explore career options."
-
-  utter_ask_skills:
-    - text: "To better understand your interests and suggest suitable careers, please tell me a bit about your skills and strengths."
-
-  utter_ask_passions:
-    - text: "Please share your passions and hobbies with me so I can recommend careers that align with your interests."
-
-  utter_ask_values:
-    - text: "What values are important to you in a career? This will help me suggest options that align with your principles."
-
-  utter_ask_personality:
-    - text: "Can you describe your personality? This will help me recommend careers that suit your traits and work style preferences."
-
-  utter_computing_science_branches:
-    - text: "Computing science encompasses various fields like software engineering, cybersecurity, artificial intelligence, and more. Let me know which area interests you the most."
-
-  utter_software_development_explanation:
-    - text: "Software development involves designing, creating, and maintaining software applications and systems. It requires skills in programming, problem-solving, and understanding user needs."
-
-  utter_data_science_explanation:
-    - text: "Data science involves extracting insights and knowledge from structured and unstructured data using scientific methods, algorithms, and systems. It combines statistics, mathematics, and computer science."
-
-  utter_cybersecurity_explanation:
-    - text: "Cybersecurity focuses on protecting computer systems, networks, and data from unauthorized access, theft, or damage. It involves implementing security measures, detecting threats, and responding to cyber attacks."
-
-  utter_artificial_intelligence_explanation:
-    - text: "Artificial Intelligence (AI) is the development of computer systems capable of performing tasks that typically require human intelligence, such as visual perception, speech recognition, decision-making, and language translation."
-
-  utter_learning_outcomes_ai:
-    - text: "Some key learning outcomes in AI include understanding machine learning algorithms, neural networks, natural language processing, computer vision, and ethical considerations in AI development."
-
-  utter_career_future_ai:
-    - text: "With the rapid growth of AI, there are numerous career opportunities in fields like machine learning engineering, AI research, robotics, and AI product management. The future looks promising for those interested in AI."
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
 
 actions:
-  - utter_greet
-  - utter_happy
-  - utter_goodbye
-  - utter_deny
-  - utter_ask_skills
-  - utter_ask_passions
-  - utter_ask_values
-  - utter_ask_personality
-  - utter_computing_science_branches
-  - utter_software_development_explanation
-  - utter_data_science_explanation
-  - utter_cybersecurity_explanation
-  - utter_artificial_intelligence_explanation
-  - utter_learning_outcomes_ai
-  - utter_career_future_ai
-
+  - action_show_topics
+  - action_show_freQ
 
 session_config:
   session_expiration_time: 60

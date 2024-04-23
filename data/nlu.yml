@@ -3,220 +3,63 @@ version: "3.1"
 nlu:
 - intent: greet
   examples: |
-    - hey
-    - hello
-    - hi
-    - hello there
-    - good morning
-    - good evening
-    - moin
-    - hey there
-    - let's go
-    - hey dude
-    - good morning
-    - good evening
-    - good afternoon
+    - Hello
+    - Hi
+    - Hey
+    - Hi there
+    - Hello bot
 
 - intent: goodbye
   examples: |
-    - cu
-    - good by
-    - cee you later
-    - good night
-    - bye
-    - goodbye
-    - have a nice day
-    - see you around
-    - bye bye
-    - see you later
+    - Bye
+    - Goodbye
+    - See you later
+    - I have to go
+    - Bye bot
 
 - intent: affirm
   examples: |
-    - yes
-    - y
-    - indeed
-    - of course
-    - that sounds good
-    - correct
+    - Yes
+    - Yup
+    - Absolutely
+    - That sounds good
+    - Correct
 
 - intent: deny
   examples: |
-    - no
-    - n
-    - never
-    - I don't think so
-    - don't like that
-    - no way
-    - not really
+    - No
+    - Not really
+    - Nope
+    - That's not right
 
-- intent: mood_happy
+- intent: mood_great
   examples: |
-    - perfect
-    - great
-    - amazing
-    - wonderful
-    - feeling very good
-    - great
-    - amazing
-    - extremely good
-    - good
+    - I'm feeling good
+    - I am great
+    - Feeling awesome
+    - I'm in a good mood
 
 - intent: mood_unhappy
   examples: |
-    - my day was horrible
-    - I am sad
-    - I don't feel very well
-    - I am disappointed
-    - super sad
-    - I'm so sad
-    - sad
-    - very sad
-    - unhappy
-    - not good
-    - not very good
-    - extremely sad
-    - so sad
-    - so sad
+    - I'm sad
+    - Feeling down
+    - Not in a good mood
+    - I am unhappy
 
 - intent: bot_challenge
   examples: |
-    - are you a bot?
-    - are you a human?
-    - am I talking to a bot?
-    - am I talking to a human?
+    - Are you a bot?
+    - Are you human or a bot?
+    - Is this a robot?
 
-- intent: find_career_interest
+- intent: topics
   examples: |
-    - Can you help me find a career?
-    - I need assistance in choosing a career.
-    - What career   I pursue?
-    - How do I discover my ideal career?
-    - I'm unsure about my career path.
-    - Can you suggest some careers for me?
-    - I'm looking for guidance on career choices.
-    - I am not sure what to study. 
+    - I am not sure what to study
+    - what can i learn in computer science
 
-- intent: explore_interests
+- intent: freQ
   examples: |
-    - What careers match my interests?
-    - How can I explore career options based on my passions?
-    - I want to learn about careers that align with my interests.
-    - What careers   I consider based on my hobbies?
-    - Can you suggest careers that match my interests?
-
-- intent: ask_about_skills
-  examples: |
-    - What skills are important for a career in [domain]?
-    - How do I know if I have the right skills for a certain career?
-    - Can you help me identify my skills for a specific career?
-    - What skills   I focus on developing for a career in [domain]?
-    - How can I improve my skills for a particular career?
-
-- intent: ask_about_passions
-  examples: |
-    - How can I turn my passions into a career?
-    - What careers allow me to pursue my passions?
-    - Can you help me find a career that aligns with my interests?
-    - How do I identify careers that match my passions?
-    - What are some careers that involve [passion]?
-
-- intent: ask_about_values
-  examples: |
-    - What values   I consider when choosing a career?
-    - How do I find a career that aligns with my values?
-    - Can you suggest careers that reflect my values?
-    - What impact can I make with my career choices?
-    - What careers contribute to causes I care about?
-
-- intent: ask_about_personality
-  examples: |
-    - How does my personality influence my career choices?
-    - Can you recommend careers based on my personality type?
-    - What career paths suit introverted individuals?
-    - How can I find a career that fits my personality?
-    - What work environments are suitable for my personality traits?
-
-- intent: computing_science
-  examples: |
-    - I'm interested in computing science
-    - Computer science sounds fascinating
-    - I want to pursue a career in computing
-    - Computer science is my passion
-    - I'm fascinated by computing science
-    - Computing is my thing
-    - I want to delve into computing science
-    - Exploring the realm of computing science
-    - Computers intrigue me
-    - The world of coding excites me
-    - I'm drawn to computing and technology
-    - I dream of a career in computing science
-    - The possibilities in computing are endless
-    - I see myself as a future computer scientist
-    - Computing is the future
-
-- intent: software_development
-  examples: |
-    - I'm keen on software development
-    - Developing software is my passion
-    - I aspire to be a software developer
-    - Crafting code is what I love
-    - I want to build software applications
-    - The art of coding intrigues me
-    - I see myself as a future software engineer
-    - Software development is where my heart lies
-    - The world of programming excites me
-    - I dream of a career in software development
-    - Developing innovative software solutions
-
-- intent: data_science
-  examples: |
-    - I'm intrigued by data science
-    - Analyzing data is my passion
-    - I aspire to be a data scientist
-    - Making sense of data excites me
-    - I want to delve into data analysis
-    - The power of data fascinates me
-    - I dream of a career in data science
-    - Uncovering insights from data
-    - Data-driven decision-making inspires me
-    - I see myself as a future data analyst
-    - The world of data science is calling me
-
-- intent: cybersecurity
-  examples: |
-    - I'm passionate about cybersecurity
-    - Protecting systems is my calling
-    - I aspire to be a cybersecurity expert
-    - Securing networks excites me
-    - I want to defend against cyber threats
-    - The importance of cybersecurity motivates me
-    - I dream of a career in cybersecurity
-    - Ensuring digital safety is my goal
-    - Cybersecurity is critical in today's world
-    - I see myself as a future cybersecurity professional
-    - The challenges of cybersecurity intrigue me
-    - How do I start a career in cybersecurity
-
-- intent: artificial_intelligence
-  examples: |
-    - I'm captivated by artificial intelligence
-    - Creating intelligent systems is my passion
-    - I aspire to work in artificial intelligence
-    - Harnessing the power of AI excites me
-    - I want to explore machine learning and neural networks
-    - The potential of AI inspires me
-    - I dream of a career in artificial intelligence
-    - Building AI-driven applications is my goal
-    - AI is shaping the future of technology
-    - I see myself as a future AI researcher
-    - The possibilities of artificial intelligence are endless
-
-- intent: learning_outcomes_ai
-  examples: |
-    - Which are the learning outcomes of ai?
-
-- intent: career_future_ai
-  examples: |
-    - Which role could i be on?
-    - What is the career future 
-
+    - i dont understand
+    - What are common questions about topics?
+    - Show frequently asked questions
+    - What do people usually ask about?

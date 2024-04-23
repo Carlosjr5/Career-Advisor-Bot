@@ -1,39 +1,85 @@
-# This files contains your custom actions which can be used to run
-# custom Python code.
-#
-# See this guide on how to implement these action:
-# https://rasa.com/docs/rasa/custom-actions
-
+import os
 from typing import Any, Text, Dict, List
-from rasa_sdk import Action, Tracker
-from rasa_sdk.executor import CollectingDispatcher
+import pandas as pd
+import requests
+from rasa_sdk import Action
+from rasa_sdk.executor import CollectingDispatcher, Tracker
+from rasa_sdk.events import SlotSet
 import openai
+import json
 
-class GPT3Action(Action):
-    def name(self) -> Text:
-        return "action_gpt3_response"
 
-    def run(self, dispatcher: CollectingDispatcher, tracker: Tracker, domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
-        
-        user_input = tracker.latest_message.get('text')
+class TopicAPI:
+    def __init__(self):
+        # Load topics from a CSV file
+        self.db = pd.read_csv("topics.csv")
 
-     
-        openai.api_key = ""  #api key
+    def fetch_topics(self):
+        return self.db.head()
 
-       
-        response = openai.Completion.create(
-            engine="text-davinci-003",  # eingine
-            prompt=user_input,
-            max_tokens=1024,
-            n=1,
-            stop=None,
-            temperature=0.5,
+    def format_topics(self, df, header=True) -> str:
+        return df.to_csv(index=False, header=header)
+
+
+class ChatGPT(object):
+
+    def __init__(self):
+        self.url = "https://api.openai.com/v1/chat/completions"
+        self.model = "gpt-3.5-turbo"
+        self.headers = {
+            "Content-Type": "application/json",
+            "Authorization": f"Bearer {os.getenv('sk-proj-')}"
+        }
+        self.prompt = "Answer the following question, based on the data shown. " \
+                      "Answer in a complete sentence and don't say anything else."
+
+    def ask(self, topics, question):
+        content = self.prompt + "\n\n" + topics + "\n\n" + question
+        body = {
+            "model": self.model,
+            "messages": [{"role": "user", "content": content}]
+        }
+        result = requests.post(
+            url=self.url,
+            headers=self.headers,
+            json=body,
         )
+        return result.json()["choices"][0]["message"]["content"]
 
-        #  generated response from the API
-        gpt3_response = response.choices[0].text.strip()
 
-        # Send the response back to the user
-        dispatcher.utter_message(text=gpt3_response)
+class ActionShowTopics(Action):
 
-        return []
+    def name(self) -> Text:
+        return "action_show_topics"
+
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+        topics = topic_api.fetch_topics()
+        results = topic_api.format_topics(topics)
+        readable = topic_api.format_topics(topics['topics'], header=False)
+        dispatcher.utter_message(
+            text=f"Here are some topics you can find when studying computer science:\n\n{readable} Which one interest you the most?:")
+        return [SlotSet("results", results)]
+
+
+class ActionShowFreQ(Action):
+
+    def name(self) -> Text:
+        return "action_show_freQ"
+
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+        topics = topic_api.fetch_topics()
+        results = topic_api.format_topics(topics)
+        readable = topic_api.format_topics(topics['freQ'], header=False)
+        dispatcher.utter_message(text=f"Here are some frequently questions by the users :\n\n{readable}")
+
+        return [SlotSet("results", results)]
+
+
+
+
+topic_api = TopicAPI()
+chatGPT = ChatGPT()
