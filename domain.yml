@@ -12,12 +12,16 @@ intents:
   - topics
   - freQ
   - topic_info:
-       use_entities: [topic]
-  - inquire_topic_information:
-      use_entities: [topic]
+     use_entities: [topic]
+  - topic_lo:
+     use_entities: [topic,learning_outcome]
+  - topic_career_future:
+     use_entities: [topic, career_future]
 
 entities:
   - topic
+  - learning_outcome
+  - career_future
 
 slots:
   results:
@@ -29,17 +33,22 @@ slots:
         action: action_show_freQ
       - type: custom
         action: action_show_topic_info
+      - type: custom
+        action: action_show_topic_lo
+      - type: custom
+        action: action_show_topic_career_future
+
 
   topic:
     type: text
-    influence_conversation: false
+    influence_conversation: true
     mappings:
       - type: from_entity
         entity: topic
-
-
-
-
+      - type: from_entity
+        entity: learning_outcome
+      - type: from_entity
+        entity: career_future
 
 
 
@@ -66,10 +75,14 @@ responses:
 
   utter_ask_topic:
   - text: "Which topic are you interested in?"
+
+
 actions:
   - action_show_topics
   - action_show_freQ
   - action_show_topic_info
+  - action_show_topic_lo
+  - action_show_topic_career_future
 
 session_config:
   session_expiration_time: 60

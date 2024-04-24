@@ -95,6 +95,68 @@ class ActionShowTopicInfo(Action):
         return []
 
 
+class ActionShowTopicLO(Action):
+
+    def name(self) -> Text:
+        return "action_show_topic_lo"
+
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+        # Fetch the user's chosen topic from the slot
+        chosen_topic = tracker.get_slot('topic')
+        if not chosen_topic:
+            dispatcher.utter_message(text="Please specify a topic you are interested in.")
+            return []
+
+        # Fetch topics
+        topics = topic_api.fetch_topics()
+        # Filter the DataFrame to find the matching topic's information
+        topic_info = topics[topics['topics'].str.lower() == chosen_topic.lower()]
+
+        # Prepare the message text
+        if not topic_info.empty:
+            information = topic_info.iloc[0]['learning_outcome']
+            message_text = f"Here is information about the '{chosen_topic}' topic:\n\n{information}"
+        else:
+            message_text = f"No information available for the topic '{chosen_topic}'."
+
+        # Dispatch the message
+        dispatcher.utter_message(text=message_text)
+
+        return []
+
+
+class ActionShowTopicCareerFuture(Action):
+
+    def name(self) -> Text:
+        return "action_show_topic_career_future"
+
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+        # Fetch the user's chosen topic from the slot
+        chosen_topic = tracker.get_slot('topic')
+        if not chosen_topic:
+            dispatcher.utter_message(text="Please specify a topic you are interested in.")
+            return []
+
+        # Fetch topics
+        topics = topic_api.fetch_topics()
+        # Filter the DataFrame to find the matching topic's information
+        topic_info = topics[topics['topics'].str.lower() == chosen_topic.lower()]
+
+        # Prepare the message text
+        if not topic_info.empty:
+            information = topic_info.iloc[0]['career_future']
+            message_text = f"Here is information about the '{chosen_topic}' topic:\n\n{information}"
+        else:
+            message_text = f"No information available for the topic '{chosen_topic}'."
+
+        # Dispatch the message
+        dispatcher.utter_message(text=message_text)
+
+        return []
 
 class ActionShowFreQ(Action):
 
@@ -110,8 +172,6 @@ class ActionShowFreQ(Action):
         dispatcher.utter_message(text=f"Here are some frequently questions by the users :\n\n{readable}")
 
         return [SlotSet("results", results)]
-
-
 
 
 topic_api = TopicAPI()

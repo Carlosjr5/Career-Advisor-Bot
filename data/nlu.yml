@@ -59,16 +59,17 @@ nlu:
 
 - intent: freQ
   examples: |
+    -               
     - i dont understand
-    - What are common questions about topics?
+    - What are common questions about topics
     - Show frequently asked questions
-    - What do people usually ask about?
+    - What do people usually ask about
 
 - intent: topic_info
   examples: |
     - Tell me more about [cybersecurity](topic)
     - I want information on [data analysis](topic)
-    - Can you provide details about [software engineering](topic)?
+    - Can you provide details about [software engineering](topic)
     - What can you tell me about [cloud computing](topic)?
     - Explain [artificial intelligence](topic) to me
     - I need details on [mobile app development](topic)
@@ -76,19 +77,24 @@ nlu:
     - Show info on [machine learning](topic)
     
 
-- intent: inquire_topic_information
+- intent: topic_lo
   examples: |
-    - Tell me about [cybersecurity](topic).
-    - I want to know more about [data analysis](topic).
-    - Can you provide information on [artificial intelligence](topic)?
-    - What do you know about [software engineering](topic)?
-    - Explain [cloud computing](topic) to me.
-    - Details about [machine learning](topic), please.
-    - I'm interested in [mobile app development](topic).
-    - Provide insights on [database](topic) management.
-    - How do I start a career in [cybersecurity](topic)?
-    - What can you tell me about [data science](topic)?
-    - I need information on [IT management](topic).
-    - Discuss the [UI/UX](topic) field.
-    - Explain the basics of [product management](topic).
-    - I am curious about careers in [artificial intelligence](topic).
+    - What are the learning outcomes for [cybersecurity](learning_outcome)
+    - learning outcome for [data analysis](learning_outcome)
+    - tell me about the learning outcome for [software engineering](learning_outcome)
+    - want to know the learning outcome for [cloud computing](learning_outcome)?
+    - Explain learning outcomes of [artificial intelligence](learning_outcome) to me
+    - the learning outcomes for [mobile app development](learning_outcome)
+    - I'm interested in the learning outcomes about [product management](learning_outcome)
+    - Show the learning outcomes of [machine learning](learning_outcome)
+
+- intent: topic_career_future
+  examples: |
+    - What is the career future for [cybersecurity](career_future)
+    - career future for [data analysis](career_future)
+    - tell me about the career future for [software engineering](career_future)
+    - want to know the career future for [cloud computing](career_future)?
+    - Explain career future of [artificial intelligence](career_future) to me
+    - the career future for [mobile app development](career_future)
+    - I'm interested in the career future about [product management](career_future)
+    - Show the career future of [machine learning](career_future)

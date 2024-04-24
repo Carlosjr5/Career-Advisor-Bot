@@ -30,3 +30,19 @@ rules:
   steps:
   - intent: inquire_topic_information
   - action: action_show_topic_info
+
+
+- rule: show topic lo
+  steps:
+  - intent: topic_lo
+  - action: action_show_topic_lo
+
+- rule: show topic career future
+  steps:
+  - intent: topic_career_future
+  - action: action_show_topic_career_future
+
+- rule: Handle out-of-scope input
+  steps:
+  - intent: nlu_fallback
+  - action: action_show_freQ
