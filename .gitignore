@@ -18,6 +18,6 @@ data/stories.md
 # Rasa environment files
 renv/
 .python-version
-
+venv
 
 train_model.sh
