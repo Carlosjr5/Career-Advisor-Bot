@@ -17,6 +17,8 @@ intents:
      use_entities: [topic,learning_outcome]
   - topic_career_future:
      use_entities: [topic, career_future]
+  - compare_topics:
+      use_entities: [ topic ]
 
 entities:
   - topic
@@ -37,6 +39,7 @@ slots:
         action: action_show_topic_lo
       - type: custom
         action: action_show_topic_career_future
+
 
 
   topic:
@@ -83,6 +86,8 @@ actions:
   - action_show_topic_info
   - action_show_topic_lo
   - action_show_topic_career_future
+  - action_show_topic_comparison
+  - action_show_topic_degree
 
 session_config:
   session_expiration_time: 60

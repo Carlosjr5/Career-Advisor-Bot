@@ -65,17 +65,27 @@ nlu:
     - Show frequently asked questions
     - What do people usually ask about
 
+
 - intent: topic_info
   examples: |
     - Tell me more about [cybersecurity](topic)
     - I want information on [data analysis](topic)
     - Can you provide details about [software engineering](topic)
-    - What can you tell me about [cloud computing](topic)?
-    - Explain [artificial intelligence](topic) to me
+    - What can you tell me about  [cloud computing](topic)
+    - What is ai  [artificial intelligence](topic)
+    - How are things stored in the [database](topic)
+    - tell me more about [ui design](career_future)
+    - What is [data engineering](topic)
     - I need details on [mobile app development](topic)
-    - I'm interested in learning more about [product management](topic)
-    - Show info on [machine learning](topic)
+    - I'm interested in getting to know more about [product management](topic)
+    - tell me about [machine learning](topic)
+    - What is the meaning for [IT management](topic)
+    - What [data scientist] means
     
+
+
+
+
 
 - intent: topic_lo
   examples: |
@@ -84,9 +94,17 @@ nlu:
     - tell me about the learning outcome for [software engineering](learning_outcome)
     - want to know the learning outcome for [cloud computing](learning_outcome)?
     - Explain learning outcomes of [artificial intelligence](learning_outcome) to me
+    - What would i learn working with [database](learning_outcome) what are the learning outcomes
+    - Tell me the learning outcomes of experience as [ui design](learning_outcome)
+    - What is a data engineer [data engineering](learning_outcome)
     - the learning outcomes for [mobile app development](learning_outcome)
     - I'm interested in the learning outcomes about [product management](learning_outcome)
     - Show the learning outcomes of [machine learning](learning_outcome)
+    - What will i learn by working on [IT management](learning_outcome)
+    - As a [data scientist](learning_outcome) which are the learning outcomes
+
+
+
 
 - intent: topic_career_future
   examples: |
@@ -95,6 +113,112 @@ nlu:
     - tell me about the career future for [software engineering](career_future)
     - want to know the career future for [cloud computing](career_future)?
     - Explain career future of [artificial intelligence](career_future) to me
+    - Which opportunities can i get working with [database](career_future) 
+    - Which roles are open as [ui design](career_future)
+    - What is a data engineer [data engineering](learning_outcome)
     - the career future for [mobile app development](career_future)
     - I'm interested in the career future about [product management](career_future)
     - Show the career future of [machine learning](career_future)
+    - Which roles can i fit in the [IT management](career_future) area
+    - As a [data scientist](career_future) which are the possible opportunities
+    
+- intent: compare_topics
+  examples: |
+    - Compare [data analysis](topic) and [machine learning](topic)
+    - I want to know the difference between [cloud computing](topic) and [software engineering](topic)
+    - What are the key differences between [artificial intelligence](topic) and [data science](topic)?
+    - Tell me how [cybersecurity](topic) compares to [cloud computing](topic)
+    - Can you contrast [product management](topic) with [IT management](topic)?
+    - Show differences in career opportunities for [mobile app development](topic) and [web development](topic)
+    - What varies between [database management](topic) and [data engineering](topic)?
+
+    
+
+- synonym: cybersecurity
+  examples: |
+    - cyber security
+    - information security
+    - cyber
+    - protect attacks
+    - anti hack
+
+- synonym: data analysis
+  examples: |
+    - data analytics
+    - analyzing data
+    - data
+    - analysis
+    - analisis
+
+- synonym: software engineering
+  examples: |
+    - software development
+    - software design
+    - software
+
+- synonym: cloud computing
+  examples: |
+    - cloud technology
+    - computing in the cloud
+    - cloud
+
+- synonym: artificial intelligence
+  examples: |
+    - ai
+    - AI
+    - machine intelligence
+
+- synonym: database
+  examples: |
+    - db
+    - DB
+    - dataset
+    - store information
+
+- synonym: ui design
+  examples: |
+    - ui ux
+    - UI/UX
+    - user interface
+    - user design
+
+- synonym: data engineering
+  examples: |
+    - data
+    - database
+    - info
+    - engineering
+
+- synonym: mobile app development
+  examples: |
+    - app development
+    - mobile apps
+    - apps
+    
+
+- synonym: product management
+  examples: |
+    - management
+    - organise
+    - product design
+
+- synonym: IT management
+  examples: |
+    - management
+    - it
+    - IT
+    - business it
+
+- synonym: data scientist
+  examples: |
+    - data
+    - data scientist
+    - research
+    - find info
+
+- synonym: machine learning
+  examples: |
+    - ML
+    - learning machines
+    - ml
+
