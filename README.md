@@ -31,8 +31,11 @@ To kickstart our exciting chatbot project powered by Rasa, follow these straight
     ```bash
    4.- pip install rasa
     ```
+     ```bash
+   5.- rasa train
+    ```
    ```bash
-   5.- rasa shell
+   6.- rasa shell
     ```
 
 
