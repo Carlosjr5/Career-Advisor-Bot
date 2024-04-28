@@ -37,6 +37,9 @@ To kickstart our exciting chatbot project powered by Rasa, follow these straight
    ```bash
    6.- rasa shell
     ```
+    7.- kill actions
+        - lsof -t -i:5055  -> get pid
+        - kill -9 (pid)
 
 
 This will launch the basic chatbot interface, allowing you to start chatting instantly! 🗣️💬

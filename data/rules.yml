@@ -36,11 +36,18 @@ rules:
   steps:
   - intent: topic_lo
   - action: action_show_topic_lo
+  - action: action_show_topic_degree
 
 - rule: show topic career future
   steps:
   - intent: topic_career_future
   - action: action_show_topic_career_future
+
+- rule: compare topics
+  steps:
+  - intent: compare_topics
+  - action: action_show_topic_comparison
+
 
 - rule: Handle out-of-scope input
   steps:

@@ -21,9 +21,25 @@ nlu:
   examples: |
     - Yes
     - Yup
+    - Yeah
     - Absolutely
     - That sounds good
     - Correct
+    - I agree
+    - Sure
+    - Of course
+    - Yes, that's what I want
+    - Yes, please
+    - Yes, go ahead
+    - Affirmative
+    - Confirm
+    - Confirmed
+    - Sounds good to me
+    - Alright
+    - Okay
+    - OK
+    - You got it
+    - Definitely
 
 - intent: deny
   examples: |
@@ -57,14 +73,6 @@ nlu:
     - I am not sure what to study
     - what can i learn in computer science
 
-- intent: freQ
-  examples: |
-    -               
-    - i dont understand
-    - What are common questions about topics
-    - Show frequently asked questions
-    - What do people usually ask about
-
 - intent: topic_info
   examples: |
     - Tell me more about [cybersecurity](topic)
@@ -72,9 +80,17 @@ nlu:
     - Can you provide details about [software engineering](topic)
     - What can you tell me about [cloud computing](topic)?
     - Explain [artificial intelligence](topic) to me
+    - Explain more about [database](topic)
+    - i want information for [data engineering](topic)
     - I need details on [mobile app development](topic)
     - I'm interested in learning more about [product management](topic)
     - Show info on [machine learning](topic)
+    - Give me information about [cybersecurity](topic)
+    - Tell me about the [IT management](topic) topic
+    - I'd like to know more about [ml](topic)
+    - Can you share details on [ai](topic)?
+    - i want to know about [ux/ui](topic)
+    - I want information about [data scientist](topic)
     
 
 - intent: topic_lo
@@ -87,6 +103,11 @@ nlu:
     - the learning outcomes for [mobile app development](learning_outcome)
     - I'm interested in the learning outcomes about [product management](learning_outcome)
     - Show the learning outcomes of [machine learning](learning_outcome)
+    - learning outcomes about [ux/ui](learning_outcome)
+    - i want to learn [database](learning_outcome)
+    - what i get learning from [data engineering](learning_outcome)
+    - Leraning outcomes about [IT management](learning_outcome)
+    - I want to know more about [data scientist](learning_outcome)
 
 - intent: topic_career_future
   examples: |
@@ -98,3 +119,148 @@ nlu:
     - the career future for [mobile app development](career_future)
     - I'm interested in the career future about [product management](career_future)
     - Show the career future of [machine learning](career_future)
+    - career future of [ux/ui](career_future)
+    - career pathway for [database](career_future)
+    - what job can i find with [data engineering](career_future)
+    - Career future for [IT management](career_future)
+    - Job oppotunities from learning [data scientist](learning_outcome)
+
+
+- intent: freQ
+  examples: |  
+    - i dont understand
+    - What are common questions about topics
+    - Show frequently asked questions
+    - What do people usually ask about
+    - I want to know the second one
+    - What's the third question?
+    - Can you tell me about the first one?
+    - Show me the fourth question
+    - can u tell me no 5? 
+    - can u explina me about no6?
+    - how can i know about no7?
+    - what are no8?
+    - explain no9?
+    - i want to know no10
+    - what is no11 
+    - how about no12
+
+
+
+
+
+- intent: topic_career_future
+  examples: |
+    - What is the career future for [cybersecurity](career_future)
+    - career future for [data analysis](career_future)
+    - tell me about the career future for [software engineering](career_future)
+    - want to know the career future for [cloud computing](career_future)?
+    - Explain career future of [artificial intelligence](career_future) to me
+    - Which opportunities can i get working with [database](career_future) 
+    - Which roles are open as [ui design](career_future)
+    - What is a data engineer [data engineering](learning_outcome)
+    - the career future for [mobile app development](career_future)
+    - I'm interested in the career future about [product management](career_future)
+    - Show the career future of [machine learning](career_future)
+    - Which roles can i fit in the [IT management](career_future) area
+    - As a [data scientist](career_future) which are the possible opportunities
+    
+- intent: compare_topics
+  examples: |
+    - Compare [data analysis](topic) and [machine learning](topic)
+    - I want to know the difference between [cloud computing](topic) and [software engineering](topic)
+    - What are the key differences between [artificial intelligence](topic) and [data science](topic)?
+    - Tell me how [cybersecurity](topic) compares to [cloud computing](topic)
+    - Can you contrast [product management](topic) with [IT management](topic)?
+    - Show differences in career opportunities for [mobile app development](topic) and [web development](topic)
+    - What varies between [database management](topic) and [data engineering](topic)?
+
+    
+
+- synonym: cybersecurity
+  examples: |
+    - cyber security
+    - information security
+    - cyber
+    - protect attacks
+    - anti hack
+
+- synonym: data analysis
+  examples: |
+    - data analytics
+    - analyzing data
+    - data
+    - analysis
+    - analisis
+
+- synonym: software engineering
+  examples: |
+    - software development
+    - software design
+    - software
+
+- synonym: cloud computing
+  examples: |
+    - cloud technology
+    - computing in the cloud
+    - cloud
+
+- synonym: artificial intelligence
+  examples: |
+    - ai
+    - AI
+    - machine intelligence
+
+- synonym: database
+  examples: |
+    - db
+    - DB
+    - dataset
+    - store information
+
+- synonym: ui design
+  examples: |
+    - ui ux
+    - UI/UX
+    - user interface
+    - user design
+
+- synonym: data engineering
+  examples: |
+    - data
+    - database
+    - info
+    - engineering
+
+- synonym: mobile app development
+  examples: |
+    - app development
+    - mobile apps
+    - apps
+    
+
+- synonym: product management
+  examples: |
+    - management
+    - organise
+    - product design
+
+- synonym: IT management
+  examples: |
+    - management
+    - it
+    - IT
+    - business it
+
+- synonym: data scientist
+  examples: |
+    - data
+    - data scientist
+    - research
+    - find info
+
+- synonym: machine learning
+  examples: |
+    - ML
+    - learning machines
+    - ml

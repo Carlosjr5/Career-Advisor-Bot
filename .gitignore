@@ -21,3 +21,4 @@ renv/
 venv
 
 train_model.sh
+results/
