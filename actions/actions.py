@@ -1,7 +1,5 @@
-import os
 from typing import Any, Text, Dict, List
 import pandas as pd
-import requests
 from rasa_sdk import Action
 from rasa_sdk.executor import CollectingDispatcher, Tracker
 from rasa_sdk.events import SlotSet
@@ -18,8 +16,6 @@ class TopicAPI:
     def format_topics(self, df, header=True) -> str:
         return df.to_csv(index=False, header=header)
 
-
-
 class ActionShowTopics(Action):
 
     def name(self) -> Text:
@@ -32,9 +28,8 @@ class ActionShowTopics(Action):
         results = topic_api.format_topics(topics)
         readable = topic_api.format_topics(topics['topics'], header=False)
         dispatcher.utter_message(
-            text=f"Here are some topics you can find when studying computer science:\n\n{readable}")
+            text=f"Here are some topics you can find when studying computer science:\n\n{readable}\n\nWhich topic are you interested in?")
         return [SlotSet("results", results)]
-
 
 class ActionShowTopicInfo(Action):
     def name(self) -> Text:
@@ -43,30 +38,21 @@ class ActionShowTopicInfo(Action):
     def run(self, dispatcher: CollectingDispatcher,
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
-        # Fetch the user's chosen topic from the slot
         chosen_topic = tracker.get_slot('topic')
         if not chosen_topic:
-            dispatcher.utter_message(text="Please specify a topic you are interested in.")
+            dispatcher.utter_message(text="I'm not sure which topic you're interested in. Could you specify?")
             return []
 
-        # Fetch topics
         topics = topic_api.fetch_topics()
-        # Create a regex pattern to match variations like 'mobile apps' -> 'mobile app'
         pattern = re.compile(r'\b' + re.escape(chosen_topic) + r's?\b', re.IGNORECASE)
-
-        # Filter the DataFrame to find the matching topic's information using regex
         match = topics['topics'].apply(lambda x: bool(pattern.search(x)))
         matched_topics = topics[match]
 
-        # Prepare the message text
         if not matched_topics.empty:
             information = "; ".join(matched_topics['information'].tolist())
-            message_text = f"Here is information about topics related to '{chosen_topic}':\n\n{information}"
+            dispatcher.utter_message(text=f"Information about {chosen_topic}:\n\n{information}\n\nLet me know if you want to know about the learning outcome and career future of it!")
         else:
-            message_text = f"No information available for topics related to '{chosen_topic}'."
-
-        # Dispatch the message
-        dispatcher.utter_message(text=message_text)
+            dispatcher.utter_message(text=f"I couldn't find information related to '{chosen_topic}'.")
 
         return []
 
@@ -100,7 +86,6 @@ class ActionShowTopicLO(Action):
 
         return []
 
-
 class ActionShowTopicCareerFuture(Action):
     def name(self) -> Text:
         return "action_show_topic_career_future"
@@ -130,7 +115,6 @@ class ActionShowTopicCareerFuture(Action):
         dispatcher.utter_message(text=message_text)
 
         return []
-
 
 class ActionShowTopicDegree(Action):
     def name(self) -> Text:
@@ -162,8 +146,6 @@ class ActionShowTopicDegree(Action):
 
         return []
 
-
-
 class ActionShowFreQ(Action):
 
     def name(self) -> Text:
@@ -175,12 +157,10 @@ class ActionShowFreQ(Action):
         topics = topic_api.fetch_topics()
         results = topic_api.format_topics(topics)
         readable = topic_api.format_topics(topics['freQ'], header=False)
-        dispatcher.utter_message(text=f"Sorry, I can´t help solving your query.\n\nHere are some frequently questions by other students :\n\n{readable}")
+        dispatcher.utter_message(
+            text=f"Sorry, I can´t help solving your query.\n\nHere are some frequently questions by other students :\n\n{readable}")
 
         return [SlotSet("results", results)]
-
-
-
 
 class ActionShowTopicComparison(Action):
     def name(self) -> Text:
@@ -204,10 +184,11 @@ class ActionShowTopicComparison(Action):
         for topic in topics:
             topic_data = dataset[dataset['topics'].str.lower().str.contains(topic.lower(), na=False)]
             if not topic_data.empty:
+                information = "; ".join(topic_data['information'].tolist())
                 learning_outcomes = "; ".join(topic_data['learning_outcome'].tolist())
                 career_futures = "; ".join(topic_data['career_future'].tolist())
                 comparisons.append(
-                    f"**{topic.capitalize()}**:\nLearning Outcomes: \n\n{learning_outcomes}\nCareer Opportunities: \n\n{career_futures}\n")
+                    f"**{topic.capitalize()}**:\n {information} \n Learning Outcomes: \n\n{learning_outcomes}\nCareer Opportunities: \n\n{career_futures}\n")
             else:
                 comparisons.append(f"No data available for '{topic}'.")
 
@@ -220,33 +201,45 @@ class ActionShowTopicComparison(Action):
 
         return []
 
+class ActionClarifyTopic(Action):
+    def name(self) -> Text:
+        return "action_clarify_topic"
 
-class ChatGPT(object):
-
-    def __init__(self):
-        self.url = "https://api.openai.com/v1/chat/completions"
-        self.model = "gpt-3.5-turbo"
-        self.headers = {
-            "Content-Type": "application/json",
-            "Authorization": f"Bearer {os.getenv('sk-proj-')}"
+    def parse_question_number(self, text: Text) -> int:
+        mapping = {
+            "first": 1, "second": 2, "third": 3, "fourth": 4,
+            "5": 5, "6": 6, "7": 7, "8": 8,
+            "9": 9, "10": 10, "11": 11, "12": 12
         }
-        self.prompt = "Answer the following question, based on the data shown. " \
-                      "Answer in a complete sentence and don't say anything else."
+        for key, value in mapping.items():
+            if key in text:
+                return value
+        return 0
 
-    def ask(self, topics, question):
-        content = self.prompt + "\n\n" + topics + "\n\n" + question
-        body = {
-            "model": self.model,
-            "messages": [{"role": "user", "content": content}]
-        }
-        result = requests.post(
-            url=self.url,
-            headers=self.headers,
-            json=body,
-        )
-        return result.json()["choices"][0]["message"]["content"]
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+        topics = topic_api.fetch_topics()
+        results = topic_api.format_topics(topics)
+        readable = topic_api.format_topics(topics['freQ'], header=False)
 
+        user_input = tracker.latest_message.get("text", "")
+        question_number = self.parse_question_number(user_input)
 
+        topic_prompts = [
+            "data analysis", "cybersecurity", "software engineering",
+            "cloud computing", "artificial intelligence", "database administration",
+            "UX/UI design", "data engineering", "mobile app development",
+            "product management", "IT project management", "data scientist"
+        ]
+
+        # Set the topic slot based on question number and ask for confirmation
+        if 1 <= question_number <= len(topic_prompts):
+            topic = topic_prompts[question_number - 1]
+            dispatcher.utter_message(text=f"Do you want to learn more about {topic}?")
+            return [SlotSet("topic", topic)]
+        else:
+            dispatcher.utter_message(text=f"Here are some frequently asked questions by the users:\n\n{readable}")
+            return [SlotSet("results", results)]
 
 topic_api = TopicAPI()
-chatGPT = ChatGPT()

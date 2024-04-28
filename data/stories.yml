@@ -29,6 +29,11 @@ stories:
   - intent: deny
   - action: action_show_freQ
 
-
-
+- story: clarify and show topic information
+  steps:
+  - intent: freQ
+  - action: action_clarify_topic
+  - intent: affirm
+  - action: action_show_topic_info
+  - action: action_listen
 

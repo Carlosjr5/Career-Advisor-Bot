@@ -76,8 +76,7 @@ responses:
   utter_iamabot:
   - text: "I am a bot, powered by Rasa."
 
-  utter_ask_topic:
-  - text: "Which topic are you interested in?"
+
 
 
 actions:
@@ -88,6 +87,7 @@ actions:
   - action_show_topic_career_future
   - action_show_topic_comparison
   - action_show_topic_degree
+  - action_clarify_topic
 
 session_config:
   session_expiration_time: 60
