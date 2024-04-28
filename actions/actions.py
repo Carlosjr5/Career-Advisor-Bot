@@ -25,11 +25,15 @@ class ActionShowTopics(Action):
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
         topics = topic_api.fetch_topics()
-        results = topic_api.format_topics(topics)
-        readable = topic_api.format_topics(topics['topics'], header=False)
-        dispatcher.utter_message(
-            text=f"Here are some topics you can find when studying computer science:\n\n{readable}\n\nWhich topic are you interested in?")
-        return [SlotSet("results", results)]
+        if 'all' in topics.columns and not topics['all'].empty:
+            first_topic = topics['all'].iloc[0]
+            dispatcher.utter_message(
+                text=f"Here's a topic you can find when studying computer science:\n\n{first_topic}\n\nWould you like to learn more about this topic?")
+        else:
+            dispatcher.utter_message(text="Sorry, no topics are available at the moment.")
+
+        return []
+
 
 class ActionShowTopicInfo(Action):
     def name(self) -> Text:
@@ -155,12 +159,15 @@ class ActionShowFreQ(Action):
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
         topics = topic_api.fetch_topics()
-        results = topic_api.format_topics(topics)
-        readable = topic_api.format_topics(topics['freQ'], header=False)
-        dispatcher.utter_message(
-            text=f"Sorry, I can´t help solving your query.\n\nHere are some frequently questions by other students :\n\n{readable}")
+        if 'questions' in topics.columns and not topics['questions'].empty:
+            first_question = topics['questions'].iloc[0]
+            dispatcher.utter_message(
+                text=f"Sorry, I can't help solve your query directly. Here's a frequently asked question by other students:\n\n{first_question}")
+        else:
+            dispatcher.utter_message(text="Sorry, no frequently asked questions are available at the moment.")
 
-        return [SlotSet("results", results)]
+        return []
+
 
 class ActionShowTopicComparison(Action):
     def name(self) -> Text:

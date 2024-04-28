@@ -1,4 +1,4 @@
-topics,freQ,learning_outcome,career_future,information,degree
+topics,freQ,learning_outcome,career_future,information,degree,questions,all
 data analysis,I want to learn more about data analysis,"- Data Analytics,
 - Data Wrangling,
 - Artificial Intelligence,
@@ -8,7 +8,30 @@ data analysis,I want to learn more about data analysis,"- Data Analytics,
 - Software Support Analysts,
 - Systems analysis,
 - Data engineering.
-","Data analysis is the process of inspecting, cleansing, transforming, and modeling data with the goal of discovering useful information, informing conclusions, and supporting decision-making.","MSc Data Engineering, Full time - You can learn more in https://www.napier.ac.uk/courses/msc-data-engineering-postgraduate-online-learning, Part time - You can learn more in https://www.napier.ac.uk/courses/msc-cyber-security-postgraduate-part-time"
+","Data analysis is the process of inspecting, cleansing, transforming, and modeling data with the goal of discovering useful information, informing conclusions, and supporting decision-making.","MSc Data Engineering, Full time - You can learn more in https://www.napier.ac.uk/courses/msc-data-engineering-postgraduate-online-learning, Part time - You can learn more in https://www.napier.ac.uk/courses/msc-cyber-security-postgraduate-part-time","- I want to learn more about data analysis.
+- What are the learning outcomes in cybersecurity?
+- I am considering a career in software engineering
+- Tell me about cloud computing careers
+- I am exploring career options in artificial intelligence
+- I want to specialize in database administration
+- How do I become a UX/UI designer
+- What are the career prospects for data engineering
+- What career paths are available in mobile app development
+- What are the learning outcomes for product management
+- Tell me about opportunities in IT project management.
+- As a data scientist which are the possible role opportunities open in the industry?
+","- Data analysis
+- Cybersecurity
+- Software engineering
+- Cloud computing
+- Artificial intelligence
+- Database
+- UI design
+- Data engineering
+- Mobile app development
+- Product management
+- IT management
+- Data scientist"
 cybersecurity,What are the learning outcomes in cybersecurity?,"- Networked Services,
 - Network Security and Cryptography,
 - OS Forensics,
@@ -21,7 +44,30 @@ cybersecurity,What are the learning outcomes in cybersecurity?,"- Networked Serv
 - Security Auditor,
 - Web Server Support,
 - Digital Forensic Specialist.
-","Cybersecurity refers to any technology, measure or practice for preventing cyberattacks or mitigating their impact. ","MSc Cybersecurity, Full time - Learn more in https://www.napier.ac.uk/courses/msc-cyber-security-postgraduate-full-time"
+","Cybersecurity refers to any technology, measure or practice for preventing cyberattacks or mitigating their impact. ","MSc Cybersecurity, Full time - Learn more in https://www.napier.ac.uk/courses/msc-cyber-security-postgraduate-full-time","- I want to learn more about data analysis.
+- What are the learning outcomes in cybersecurity?
+- I am considering a career in software engineering
+- Tell me about cloud computing careers
+- I am exploring career options in artificial intelligence
+- I want to specialize in database administration
+- How do I become a UX/UI designer
+- What are the career prospects for data engineering
+- What career paths are available in mobile app development
+- What are the learning outcomes for product management
+- Tell me about opportunities in IT project management.
+- As a data scientist which are the possible role opportunities open in the industry?
+","- Data analysis
+- Cybersecurity
+- Software engineering
+- Cloud computing
+- Artificial intelligence
+- Database
+- UI design
+- Data engineering
+- Mobile app development
+- Product management
+- IT management
+- Data scientist"
 software engineering,I am considering a career in software engineering,"- Foundations of Software Design & Development,
 - Secure Software Development,
 - Software Architecture,
@@ -35,14 +81,60 @@ software engineering,I am considering a career in software engineering,"- Founda
 - Software Developer,
 - Software Tester,
 - Web Developer.
-","Software Engineering is a subdomain of Engineering in which you learn to develop, design, test, and maintain software using a systematic and structured approach. Software is a collection of programs. And that programs are developed by software engineers. ","MSc Computing, Full time - Learn more in https://www.napier.ac.uk/courses/msc-computing-postgraduate-fulltime, Part time - Learn more in https://www.napier.ac.uk/courses/msc-computing-postgraduate-parttime"
+","Software Engineering is a subdomain of Engineering in which you learn to develop, design, test, and maintain software using a systematic and structured approach. Software is a collection of programs. And that programs are developed by software engineers. ","MSc Computing, Full time - Learn more in https://www.napier.ac.uk/courses/msc-computing-postgraduate-fulltime, Part time - Learn more in https://www.napier.ac.uk/courses/msc-computing-postgraduate-parttime","- I want to learn more about data analysis.
+- What are the learning outcomes in cybersecurity?
+- I am considering a career in software engineering
+- Tell me about cloud computing careers
+- I am exploring career options in artificial intelligence
+- I want to specialize in database administration
+- How do I become a UX/UI designer
+- What are the career prospects for data engineering
+- What career paths are available in mobile app development
+- What are the learning outcomes for product management
+- Tell me about opportunities in IT project management.
+- As a data scientist which are the possible role opportunities open in the industry?
+","- Data analysis
+- Cybersecurity
+- Software engineering
+- Cloud computing
+- Artificial intelligence
+- Database
+- UI design
+- Data engineering
+- Mobile app development
+- Product management
+- IT management
+- Data scientist"
 cloud computing,Tell me about cloud computing careers,"- Database System,
 - Programming Fundamentals,
 - Artificial Intelligence,
 - Systems and Services.
 ","- Cloud administrator,
 - Cloud support engineer.
-",Cloud Computing means storing and accessing the data and programs on remote servers that are hosted on the internet instead of the computer�s hard drive or local server.,"MSc Computing, Full time - Learn more in https://www.napier.ac.uk/courses/msc-computing-postgraduate-fulltime, Part time - Learn more in https://www.napier.ac.uk/courses/msc-computing-postgraduate-parttime"
+",Cloud Computing means storing and accessing the data and programs on remote servers that are hosted on the internet instead of the computer�s hard drive or local server.,"MSc Computing, Full time - Learn more in https://www.napier.ac.uk/courses/msc-computing-postgraduate-fulltime, Part time - Learn more in https://www.napier.ac.uk/courses/msc-computing-postgraduate-parttime","- I want to learn more about data analysis.
+- What are the learning outcomes in cybersecurity?
+- I am considering a career in software engineering
+- Tell me about cloud computing careers
+- I am exploring career options in artificial intelligence
+- I want to specialize in database administration
+- How do I become a UX/UI designer
+- What are the career prospects for data engineering
+- What career paths are available in mobile app development
+- What are the learning outcomes for product management
+- Tell me about opportunities in IT project management.
+- As a data scientist which are the possible role opportunities open in the industry?
+","- Data analysis
+- Cybersecurity
+- Software engineering
+- Cloud computing
+- Artificial intelligence
+- Database
+- UI design
+- Data engineering
+- Mobile app development
+- Product management
+- IT management
+- Data scientist"
 artificial intelligence,I am exploring career options in artificial intelligence,"- Algorithms and Data Structures,
 - Artificial Intelligence,
 - Data Wrangling, Data Analytics,
@@ -52,7 +144,30 @@ artificial intelligence,I am exploring career options in artificial intelligence
 ","- AI Research Scientist,
 - Machine Learning Engineer,
 - Data Scientist,
-- Natural Language Processing (NLP) Engineer.",Artificial Intelligence explores the development of intelligent systems capable of learning and decision-making. It involves techniques such as machine learning,"MSc Computing, Full time - Learn more in https://www.napier.ac.uk/courses/msc-computing-postgraduate-fulltime, Part time - Learn more in https://www.napier.ac.uk/courses/msc-computing-postgraduate-parttime"
+- Natural Language Processing (NLP) Engineer.",Artificial Intelligence explores the development of intelligent systems capable of learning and decision-making. It involves techniques such as machine learning,"MSc Computing, Full time - Learn more in https://www.napier.ac.uk/courses/msc-computing-postgraduate-fulltime, Part time - Learn more in https://www.napier.ac.uk/courses/msc-computing-postgraduate-parttime","- I want to learn more about data analysis.
+- What are the learning outcomes in cybersecurity?
+- I am considering a career in software engineering
+- Tell me about cloud computing careers
+- I am exploring career options in artificial intelligence
+- I want to specialize in database administration
+- How do I become a UX/UI designer
+- What are the career prospects for data engineering
+- What career paths are available in mobile app development
+- What are the learning outcomes for product management
+- Tell me about opportunities in IT project management.
+- As a data scientist which are the possible role opportunities open in the industry?
+","- Data analysis
+- Cybersecurity
+- Software engineering
+- Cloud computing
+- Artificial intelligence
+- Database
+- UI design
+- Data engineering
+- Mobile app development
+- Product management
+- IT management
+- Data scientist"
 database,I want to specialize in database administration,"- Database Systems,
 - Advanced Database Systems,
 - Foundations of Software Design and Development,
@@ -64,7 +179,30 @@ database,I want to specialize in database administration,"- Database Systems,
 - Database Developer,
 - Data Engineer,
 - Data Governance Specialist.
-","A database is a collection of data that is organized, which is also called structured data. It can be accessed or stored in a computer system.","MSc Data Engineering, Full time - You can learn more in https://www.napier.ac.uk/courses/msc-data-engineering-postgraduate-online-learning, Part time - You can learn more in https://www.napier.ac.uk/courses/msc-cyber-security-postgraduate-part-time"
+","A database is a collection of data that is organized, which is also called structured data. It can be accessed or stored in a computer system.","MSc Data Engineering, Full time - You can learn more in https://www.napier.ac.uk/courses/msc-data-engineering-postgraduate-online-learning, Part time - You can learn more in https://www.napier.ac.uk/courses/msc-cyber-security-postgraduate-part-time","- I want to learn more about data analysis.
+- What are the learning outcomes in cybersecurity?
+- I am considering a career in software engineering
+- Tell me about cloud computing careers
+- I am exploring career options in artificial intelligence
+- I want to specialize in database administration
+- How do I become a UX/UI designer
+- What are the career prospects for data engineering
+- What career paths are available in mobile app development
+- What are the learning outcomes for product management
+- Tell me about opportunities in IT project management.
+- As a data scientist which are the possible role opportunities open in the industry?
+","- Data analysis
+- Cybersecurity
+- Software engineering
+- Cloud computing
+- Artificial intelligence
+- Database
+- UI design
+- Data engineering
+- Mobile app development
+- Product management
+- IT management
+- Data scientist"
 ui design,How do I become a UX/UI designer,"- Practical Interaction Design,
 - Playful Interaction,
 - Information & Interaction,
@@ -81,7 +219,30 @@ ui design,How do I become a UX/UI designer,"- Practical Interaction Design,
 - Mobile/Wearable App Designer/Developer,
 - Web Designer/Developer,
 - UX Researcher/Design Researcher.
-",User Experience (UX) Design is a creative dynamic discipline that encourages curiosity creatively expressed through the voice of people.,"MSc User Experience Design, Full time - Learn more in https://www.napier.ac.uk/courses/msc-user-experience-design-postgraduate-fulltime, Part time - Learn more in https://www.napier.ac.uk/courses/msc-user-experience-design-postgraduate-parttime"
+",User Experience (UX) Design is a creative dynamic discipline that encourages curiosity creatively expressed through the voice of people.,"MSc User Experience Design, Full time - Learn more in https://www.napier.ac.uk/courses/msc-user-experience-design-postgraduate-fulltime, Part time - Learn more in https://www.napier.ac.uk/courses/msc-user-experience-design-postgraduate-parttime","- I want to learn more about data analysis.
+- What are the learning outcomes in cybersecurity?
+- I am considering a career in software engineering
+- Tell me about cloud computing careers
+- I am exploring career options in artificial intelligence
+- I want to specialize in database administration
+- How do I become a UX/UI designer
+- What are the career prospects for data engineering
+- What career paths are available in mobile app development
+- What are the learning outcomes for product management
+- Tell me about opportunities in IT project management.
+- As a data scientist which are the possible role opportunities open in the industry?
+","- Data analysis
+- Cybersecurity
+- Software engineering
+- Cloud computing
+- Artificial intelligence
+- Database
+- UI design
+- Data engineering
+- Mobile app development
+- Product management
+- IT management
+- Data scientist"
 data engineering,What are the career prospects for data engineering,"- Data Analytics,
 - Algorithms and Data Structures,
 - Artificial Intelligence,
@@ -98,7 +259,30 @@ data engineering,What are the career prospects for data engineering,"- Data Anal
 - Machine learning engineering,
 - Machine learning scientist,
 - Statistician.
-","Data engineering is the practice of designing and building systems for collecting, storing, and analyzing data at scale.","MSc Data Engineering, Full time - You can learn more in https://www.napier.ac.uk/courses/msc-data-engineering-postgraduate-online-learning, Part time - You can learn more in https://www.napier.ac.uk/courses/msc-cyber-security-postgraduate-part-time"
+","Data engineering is the practice of designing and building systems for collecting, storing, and analyzing data at scale.","MSc Data Engineering, Full time - You can learn more in https://www.napier.ac.uk/courses/msc-data-engineering-postgraduate-online-learning, Part time - You can learn more in https://www.napier.ac.uk/courses/msc-cyber-security-postgraduate-part-time","- I want to learn more about data analysis.
+- What are the learning outcomes in cybersecurity?
+- I am considering a career in software engineering
+- Tell me about cloud computing careers
+- I am exploring career options in artificial intelligence
+- I want to specialize in database administration
+- How do I become a UX/UI designer
+- What are the career prospects for data engineering
+- What career paths are available in mobile app development
+- What are the learning outcomes for product management
+- Tell me about opportunities in IT project management.
+- As a data scientist which are the possible role opportunities open in the industry?
+","- Data analysis
+- Cybersecurity
+- Software engineering
+- Cloud computing
+- Artificial intelligence
+- Database
+- UI design
+- Data engineering
+- Mobile app development
+- Product management
+- IT management
+- Data scientist"
 mobile app development,What career paths are available in mobile app development,"- Foundations of Software Design and Development,
 - Mobile Applications Development,
 - Software Engineering,
@@ -111,7 +295,30 @@ mobile app development,What career paths are available in mobile app development
 - Mobile Game Developer,
 - Mobile App Architect,
 - Cross-Platform Developer.
-","Mobile application development is the process of making software for smartphones, tablets and digital assistants, most commonly for the Android and iOS operating systems.","MSc Computing, Full time - Learn more in https://www.napier.ac.uk/courses/msc-computing-postgraduate-fulltime, Part time - Learn more in https://www.napier.ac.uk/courses/msc-computing-postgraduate-parttime"
+","Mobile application development is the process of making software for smartphones, tablets and digital assistants, most commonly for the Android and iOS operating systems.","MSc Computing, Full time - Learn more in https://www.napier.ac.uk/courses/msc-computing-postgraduate-fulltime, Part time - Learn more in https://www.napier.ac.uk/courses/msc-computing-postgraduate-parttime","- I want to learn more about data analysis.
+- What are the learning outcomes in cybersecurity?
+- I am considering a career in software engineering
+- Tell me about cloud computing careers
+- I am exploring career options in artificial intelligence
+- I want to specialize in database administration
+- How do I become a UX/UI designer
+- What are the career prospects for data engineering
+- What career paths are available in mobile app development
+- What are the learning outcomes for product management
+- Tell me about opportunities in IT project management.
+- As a data scientist which are the possible role opportunities open in the industry?
+","- Data analysis
+- Cybersecurity
+- Software engineering
+- Cloud computing
+- Artificial intelligence
+- Database
+- UI design
+- Data engineering
+- Mobile app development
+- Product management
+- IT management
+- Data scientist"
 product management,What are the learning outcomes for product management,"- Programming Fundamentals,
 - Data Wrangling,
 - Artificial Intelligence,
@@ -122,7 +329,30 @@ product management,What are the learning outcomes for product management,"- Prog
 - E-commerce Product Manager,
 - Technology Product Manager,
 - Smart City Product Manager.
-","Product management is the process of developing, doing market releases for, and managing a product or service.","MSc Business Information Technology, Full time - Learn more in https://www.napier.ac.uk/courses/msc-business-information-technology-postgraduate-fulltime, Part time - Learn more in https://www.napier.ac.uk/courses/msc-business-information-technology-postgraduate-parttime"
+","Product management is the process of developing, doing market releases for, and managing a product or service.","MSc Business Information Technology, Full time - Learn more in https://www.napier.ac.uk/courses/msc-business-information-technology-postgraduate-fulltime, Part time - Learn more in https://www.napier.ac.uk/courses/msc-business-information-technology-postgraduate-parttime","- I want to learn more about data analysis.
+- What are the learning outcomes in cybersecurity?
+- I am considering a career in software engineering
+- Tell me about cloud computing careers
+- I am exploring career options in artificial intelligence
+- I want to specialize in database administration
+- How do I become a UX/UI designer
+- What are the career prospects for data engineering
+- What career paths are available in mobile app development
+- What are the learning outcomes for product management
+- Tell me about opportunities in IT project management.
+- As a data scientist which are the possible role opportunities open in the industry?
+","- Data analysis
+- Cybersecurity
+- Software engineering
+- Cloud computing
+- Artificial intelligence
+- Database
+- UI design
+- Data engineering
+- Mobile app development
+- Product management
+- IT management
+- Data scientist"
 IT management,Tell me about opportunities in IT project management.,"- Foundations of Software Design and Development,
 - Agile Project Management,
 - Management of Software Projects,
@@ -133,7 +363,30 @@ IT management,Tell me about opportunities in IT project management.,"- Foundatio
 - IT Project Manager,
 - IT Operations Manager,
 - Business Intelligence (BI) Manager.
-","IT management refers to the monitoring and administration of an organization�s information technology systems: hardware, software and networks.","MSc Business Information Technology, Full time - Learn more in https://www.napier.ac.uk/courses/msc-business-information-technology-postgraduate-fulltime, Part time - Learn more in https://www.napier.ac.uk/courses/msc-business-information-technology-postgraduate-parttime"
+","IT management refers to the monitoring and administration of an organization�s information technology systems: hardware, software and networks.","MSc Business Information Technology, Full time - Learn more in https://www.napier.ac.uk/courses/msc-business-information-technology-postgraduate-fulltime, Part time - Learn more in https://www.napier.ac.uk/courses/msc-business-information-technology-postgraduate-parttime","- I want to learn more about data analysis.
+- What are the learning outcomes in cybersecurity?
+- I am considering a career in software engineering
+- Tell me about cloud computing careers
+- I am exploring career options in artificial intelligence
+- I want to specialize in database administration
+- How do I become a UX/UI designer
+- What are the career prospects for data engineering
+- What career paths are available in mobile app development
+- What are the learning outcomes for product management
+- Tell me about opportunities in IT project management.
+- As a data scientist which are the possible role opportunities open in the industry?
+","- Data analysis
+- Cybersecurity
+- Software engineering
+- Cloud computing
+- Artificial intelligence
+- Database
+- UI design
+- Data engineering
+- Mobile app development
+- Product management
+- IT management
+- Data scientist"
 data scientist,As a data scientist which are the possible role opportunities open in the industry?,"- Data Analytics,
 - Data Wrangling,
 - Artificial Intelligence,
@@ -142,4 +395,27 @@ data scientist,As a data scientist which are the possible role opportunities ope
 - Software Support Analysts,
 - Systems analysis,
 - Data engineering.
-","Data science is defined as an interdisciplinary field that involves extracting knowledge and insights from data using scientific methods, algorithms, and systems. Data Science combines elements of mathematics, statistics, computer science, and domain expertise to analyze large volumes of structured and unstructured data. ","MSc Data Science, Online learning - Learn more in https://www.napier.ac.uk/courses/msc-data-science-postgraduate-online-learning"
+","Data science is defined as an interdisciplinary field that involves extracting knowledge and insights from data using scientific methods, algorithms, and systems. Data Science combines elements of mathematics, statistics, computer science, and domain expertise to analyze large volumes of structured and unstructured data. ","MSc Data Science, Online learning - Learn more in https://www.napier.ac.uk/courses/msc-data-science-postgraduate-online-learning","- I want to learn more about data analysis.
+- What are the learning outcomes in cybersecurity?
+- I am considering a career in software engineering
+- Tell me about cloud computing careers
+- I am exploring career options in artificial intelligence
+- I want to specialize in database administration
+- How do I become a UX/UI designer
+- What are the career prospects for data engineering
+- What career paths are available in mobile app development
+- What are the learning outcomes for product management
+- Tell me about opportunities in IT project management.
+- As a data scientist which are the possible role opportunities open in the industry?
+","- Data analysis
+- Cybersecurity
+- Software engineering
+- Cloud computing
+- Artificial intelligence
+- Database
+- UI design
+- Data engineering
+- Mobile app development
+- Product management
+- IT management
+- Data scientist"
