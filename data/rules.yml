@@ -16,21 +16,15 @@ rules:
   - intent: topics
   - action: action_show_topics
 
-- rule: show freQ
+- rule: clarify topic input
   steps:
   - intent: freQ
-  - action: action_show_freQ
+  - action: action_clarify_topic
 
 - rule: show topic info
   steps:
   - intent: topic_info
   - action: action_show_topic_info
-
-- rule: show topic info
-  steps:
-  - intent: inquire_topic_information
-  - action: action_show_topic_info
-
 
 - rule: show topic lo
   steps:
