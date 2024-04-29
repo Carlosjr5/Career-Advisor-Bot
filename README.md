@@ -15,8 +15,8 @@ To kickstart our exciting chatbot project powered by Rasa, follow these straight
 ### Checkout and Begin Testing
 💻 Switch to your preferred Integrated Development Environment (IDE), checkout your newly created branch, and start testing! Experiment with the chatbot, tweak its responses, and let your imagination run wild! 🎉
 
-### First Time Setup - Rasa Shell
-🤖 For those testing the chatbot for the first time, it's as simple as running the following commands in your terminal:
+### Executing Career Advisor Chatbot
+🤖 Here are the instructions to run it in the terminal.
 
 1. Open your terminal and execute:
    ```bash
@@ -29,17 +29,21 @@ To kickstart our exciting chatbot project powered by Rasa, follow these straight
    3.- source ./venv/bin/activate
     ```
     ```bash
-   4.- pip install rasa
+   4.- rasa run actions
     ```
      ```bash
    5.- rasa train
     ```
    ```bash
-   6.- rasa shell
+   6.- rasa run --enable-api
+    ```
+    ```bash
+   7.- streamlit run app.py
     ```
 
 
-This will launch the basic chatbot interface, allowing you to start chatting instantly! 🗣️💬
+
+This will launch the career advisor chatbot user interface, allowing you to start chatting instantly! 🗣️💬
 
 Initial Testing and Interaction
 As you interact with the chatbot, observe its responses and behavior closely. This initial testing phase helps us grasp the bot's current capabilities and pinpoint areas for enhancement. 🔍
