@@ -14,7 +14,7 @@ intents:
   - topic_info:
      use_entities: [topic]
   - topic_lo:
-     use_entities: [topic,learning_outcome]
+     use_entities: [topic, learning_outcome]
   - topic_career_future:
      use_entities: [topic, career_future]
   - compare_topics:
@@ -67,8 +67,6 @@ responses:
   utter_did_that_help:
   - text: "Did that help you?"
 
-  utter_happy:
-  - text: "Great, carry on!"
 
   utter_goodbye:
   - text: "Bye"

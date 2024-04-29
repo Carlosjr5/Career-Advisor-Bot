@@ -29,7 +29,7 @@ if prompt := st.chat_input("You:"):
         st.markdown(prompt)
     # Add user message to chat history
     st.session_state.messages.append({"role": "user", "content": prompt})
-    # Send user message to Rasa server and get response
+    
     rasa_response = send_message(prompt)
     # Display assistant response in chat message container
     for response in rasa_response:

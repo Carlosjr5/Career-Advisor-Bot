@@ -1,0 +1,31 @@
+[
+  {
+    "text": "What is a data engineer data engineering",
+    "entities": [
+      {
+        "start": 24,
+        "end": 40,
+        "value": "data engineering",
+        "entity": "learning_outcome"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "learning_outcome",
+        "start": 10,
+        "end": 14,
+        "confidence_entity": 0.7375063300132751,
+        "value": "data",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "learning_outcome",
+        "start": 24,
+        "end": 40,
+        "confidence_entity": 0.9632347226142883,
+        "value": "data engineering",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  }
+]

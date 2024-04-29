@@ -1,30 +1,14 @@
 version: "3.1"
 
 stories:
-
-- story: greet
+- story: ask about a specific topic and get info
   steps:
-  - intent: greet
-  - action: utter_greet
-
-
-- story: sad path 1
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: mood_unhappy
-  - action: utter_cheer_up
-  - action: utter_did_that_help
-
-- story: sad path 2
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: mood_unhappy
-  - action: utter_cheer_up
-  - action: utter_did_that_help
-  - intent: deny
-  - action: action_show_freQ
+    - intent: topic_info
+      entities:
+        - topic: cybersecurity
+    - slot_was_set:
+        - topic: cybersecurity
+    - action: action_show_topic_info
 
 - story: clarify and show topic information
   steps:
@@ -32,7 +16,26 @@ stories:
   - action: action_clarify_topic
   - intent: affirm
   - action: action_show_topic_info
-  - action: action_listen
+
+
+- story: ask about topic career future
+  steps:
+    - intent: topic_career_future
+      entities:
+        - topic: cybersecurity
+        - career_future: cybersecurity
+    - action: action_show_topic_career_future
+
+
+
+- story: compare two topics
+  steps:
+    - intent: compare_topics
+      entities:
+        - topic: artificial intelligence
+        - topic: data science
+    - action: action_show_topic_comparison
+
 
 
 

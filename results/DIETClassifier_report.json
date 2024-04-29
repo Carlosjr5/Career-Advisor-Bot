@@ -1,0 +1,42 @@
+{
+  "career_future": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 29,
+    "confused_with": {}
+  },
+  "topic": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 55,
+    "confused_with": {}
+  },
+  "learning_outcome": {
+    "precision": 0.9655172413793104,
+    "recall": 1.0,
+    "f1-score": 0.9824561403508771,
+    "support": 28,
+    "confused_with": {}
+  },
+  "micro avg": {
+    "precision": 0.9911504424778761,
+    "recall": 1.0,
+    "f1-score": 0.9955555555555555,
+    "support": 112
+  },
+  "macro avg": {
+    "precision": 0.9885057471264368,
+    "recall": 1.0,
+    "f1-score": 0.9941520467836257,
+    "support": 112
+  },
+  "weighted avg": {
+    "precision": 0.9913793103448276,
+    "recall": 1.0,
+    "f1-score": 0.9956140350877193,
+    "support": 112
+  },
+  "accuracy": 0.9983766233766234
+}
