@@ -247,8 +247,7 @@ class ActionShowFreQ(Action):
         topics = topic_api.fetch_topics()
         if 'questions' in topics.columns and not topics['questions'].empty:
             first_question = topics['questions'].iloc[0]
-            dispatcher.utter_message(
-                text=f"Sorry, I can't help solve your query directly. Here's a frequently asked question by other students:\n\n{first_question}")
+            dispatcher.utter_message(text=f"Sorry, I can't help solve your query directly. Here's a frequently asked question by other students:\n\n{first_question}")
         else:
             dispatcher.utter_message(text="Sorry, no frequently asked questions are available at the moment.")
 
@@ -336,8 +335,10 @@ class ActionClarifyTopic(Action):
             dispatcher.utter_message(text=f"Do you want to learn more about {topic}?")
             return [SlotSet("topic", topic)]
         else:
-            dispatcher.utter_message(text=f"Here are some frequently asked questions by the users:\n\n{readable}")
-            return [SlotSet("results", results)]
+            first_question = topics['questions'].iloc[0]
+            dispatcher.utter_message(text=f"Sorry, I can't help solve your query directly. Here's a frequently asked question by other students:\n\n{first_question}")
+            
+       
 
 
 topic_api = TopicAPI()
