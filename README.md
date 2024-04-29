@@ -14,7 +14,7 @@ The main components of the pipeline include:
 
 # Usage
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)]([https://colab.research.google.com/github/weiji14/deepbedmap/](https://colab.research.google.com/drive/1Uzpy5bk0o5LAdynYFfVGKlY5toJ8F5qL?usp=sharing)]
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1Uzpy5bk0o5LAdynYFfVGKlY5toJ8F5qL?usp=sharing)]
 
 Open the provided Colab Notebook and follow the instructions to run the experiment.
 
