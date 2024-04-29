@@ -72,6 +72,10 @@ nlu:
   examples: |
     - I am not sure what to study
     - what can i learn in computer science
+    - Tell me about different fields in computing
+    - Can you suggest some topics to explore in tech?
+    - Can you list some topics related to IT and computing?
+    - I want to learn something new.
 
 - intent: topic_info
   examples: |
