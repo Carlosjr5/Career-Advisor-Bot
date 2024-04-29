@@ -34,11 +34,11 @@ def unify_topic_name(topic: Text) -> Text:
         "cyber sec": "cybersecurity",
         "security tech": "cybersecurity",
 
-        "data analysis": "data science",
-        "data analytics": "data science",
-        "analytics": "data science",
-        "analyzing data": "data science",
-        "data analys": "data science",
+        "data analysis": "data analysis",
+        "data analytics": "data analysis",
+        "analytics": "data scientist",
+        "analyzing data": "data scientist",
+        "data analys": "data scientist",
 
         "software dev": "software engineering",
         "soft eng": "software engineering",
@@ -80,10 +80,10 @@ def unify_topic_name(topic: Text) -> Text:
         "information tech management": "IT management",
         "technology management": "IT management",
 
-        "data scientist": "data science",
-        "data science expert": "data science",
-        "data professional": "data science",
-        "data analysis expert": "data science"
+        "data scientist": "data scientist",
+        "data science expert": "data scientist",
+        "data professional": "data scientist",
+       
     }
     return synonym_map.get(topic.lower(), topic)
 
@@ -337,7 +337,7 @@ class ActionClarifyTopic(Action):
         else:
             first_question = topics['questions'].iloc[0]
             dispatcher.utter_message(text=f"Sorry, I can't help solve your query directly. Here's a frequently asked question by other students:\n\n{first_question}")
-            
+            return [SlotSet("results",results)]
        
 
 

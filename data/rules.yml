@@ -32,6 +32,9 @@ rules:
   - action: action_show_topic_lo
   - action: action_show_topic_degree
 
+
+
+
 - rule: show topic career future
   steps:
   - intent: topic_career_future

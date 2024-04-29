@@ -111,7 +111,11 @@ nlu:
     - i want to learn [database](learning_outcome)
     - what i get learning from [data engineering](learning_outcome)
     - Leraning outcomes about [IT management](learning_outcome)
-    - I want to know more about [data scientist](learning_outcome)
+    - I want to know [data scientist](learning_outcome)
+
+
+
+
 
 - intent: topic_career_future
   examples: |
