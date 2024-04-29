@@ -1,5 +1,5 @@
-topics,freQ,learning_outcome,career_future,information,degree,questions,all
-data analysis,I want to learn more about data analysis,"- Data Analytics,
+topics,ambigQ, freQ,learning_outcome,career_future,information,degree,questions,all
+data analysis, DS degree, I want to learn more about data analysis,"- Data Analytics,
 - Data Wrangling,
 - Artificial Intelligence,
 - Data Management,
@@ -32,7 +32,7 @@ data analysis,I want to learn more about data analysis,"- Data Analytics,
 - Product management
 - IT management
 - Data scientist"
-cybersecurity,What are the learning outcomes in cybersecurity?,"- Networked Services,
+cybersecurity, Pen testing, What are the learning outcomes in cybersecurity?,"- Networked Services,
 - Network Security and Cryptography,
 - OS Forensics,
 - Security Systems for loT,
@@ -68,7 +68,7 @@ cybersecurity,What are the learning outcomes in cybersecurity?,"- Networked Serv
 - Product management
 - IT management
 - Data scientist"
-software engineering,I am considering a career in software engineering,"- Foundations of Software Design & Development,
+software engineering, how to become a coder?,I am considering a career in software engineering,"- Foundations of Software Design & Development,
 - Secure Software Development,
 - Software Architecture,
 - Web Technologies,
@@ -105,7 +105,7 @@ software engineering,I am considering a career in software engineering,"- Founda
 - Product management
 - IT management
 - Data scientist"
-cloud computing,Tell me about cloud computing careers,"- Database System,
+cloud computing, Does DevOps need programming?,Tell me about cloud computing careers,"- Database System,
 - Programming Fundamentals,
 - Artificial Intelligence,
 - Systems and Services.
@@ -135,7 +135,7 @@ cloud computing,Tell me about cloud computing careers,"- Database System,
 - Product management
 - IT management
 - Data scientist"
-artificial intelligence,I am exploring career options in artificial intelligence,"- Algorithms and Data Structures,
+artificial intelligence, ML or AI?,I am exploring career options in artificial intelligence,"- Algorithms and Data Structures,
 - Artificial Intelligence,
 - Data Wrangling, Data Analytics,
 - Computing in Contemporary Society,
@@ -168,7 +168,7 @@ artificial intelligence,I am exploring career options in artificial intelligence
 - Product management
 - IT management
 - Data scientist"
-database,I want to specialize in database administration,"- Database Systems,
+database, Oracle SQL, I want to specialize in database administration,"- Database Systems,
 - Advanced Database Systems,
 - Foundations of Software Design and Development,
 - Data Analytics,
@@ -203,7 +203,7 @@ database,I want to specialize in database administration,"- Database Systems,
 - Product management
 - IT management
 - Data scientist"
-ui design,How do I become a UX/UI designer,"- Practical Interaction Design,
+ui design, frontend designer, How do I become a UX/UI designer,"- Practical Interaction Design,
 - Playful Interaction,
 - Information & Interaction,
 - Responsive Environment,
@@ -243,7 +243,7 @@ ui design,How do I become a UX/UI designer,"- Practical Interaction Design,
 - Product management
 - IT management
 - Data scientist"
-data engineering,What are the career prospects for data engineering,"- Data Analytics,
+data engineering, DS or DE?,What are the career prospects for data engineering,"- Data Analytics,
 - Algorithms and Data Structures,
 - Artificial Intelligence,
 - Advanced Machine Learning,
@@ -283,7 +283,7 @@ data engineering,What are the career prospects for data engineering,"- Data Anal
 - Product management
 - IT management
 - Data scientist"
-mobile app development,What career paths are available in mobile app development,"- Foundations of Software Design and Development,
+mobile app development, IOS apps, What career paths are available in mobile app development,"- Foundations of Software Design and Development,
 - Mobile Applications Development,
 - Software Engineering,
 - Object Oriented Software Development,
@@ -319,7 +319,7 @@ mobile app development,What career paths are available in mobile app development
 - Product management
 - IT management
 - Data scientist"
-product management,What are the learning outcomes for product management,"- Programming Fundamentals,
+product management, Managing products, What are the learning outcomes for product management,"- Programming Fundamentals,
 - Data Wrangling,
 - Artificial Intelligence,
 - Agile Project Management,
@@ -353,7 +353,7 @@ product management,What are the learning outcomes for product management,"- Prog
 - Product management
 - IT management
 - Data scientist"
-IT management,Tell me about opportunities in IT project management.,"- Foundations of Software Design and Development,
+IT management, i need a degree in IT, Tell me about opportunities in IT project management.,"- Foundations of Software Design and Development,
 - Agile Project Management,
 - Management of Software Projects,
 - Knowledge Management,
@@ -387,7 +387,7 @@ IT management,Tell me about opportunities in IT project management.,"- Foundatio
 - Product management
 - IT management
 - Data scientist"
-data scientist,As a data scientist which are the possible role opportunities open in the industry?,"- Data Analytics,
+data scientist, Math and Computer Science related degree, As a data scientist which are the possible role opportunities open in the industry?,"- Data Analytics,
 - Data Wrangling,
 - Artificial Intelligence,
 - Data Management and Processing.
