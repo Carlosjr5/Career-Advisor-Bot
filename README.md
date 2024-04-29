@@ -1,66 +1,34 @@
-# 🌟 Welcome to Our Chatbot Repository! 🌟
+# Plan C: RAG Pipeline with LLM Model
 
-## 👥 Getting Started with Our Group Chatbot Project
+This repository contains an experimental implementation of a RAG (Retrieval-Augmented Generation) pipeline using a Large Language Model (LLM). The pipeline is designed to retrieve relevant contents from the database and generate responses to given prompts. The performance of the pipeline is evaluated using the RQUGE metric.
+Overview
 
-Hey Team! Are you ready to embark on our chatbot project journey together? Let's ensure everyone is on the same page!
+The RAG pipeline with LLM model combines the strengths of information retrieval and natural language generation techniques. It leverages the retrieval capabilities of RAG to fetch relevant context passages from a knowledge source, and then utilizes the generative capabilities of LLM to produce coherent responses.
+Components
 
-To kickstart our exciting chatbot project powered by Rasa, follow these straightforward steps:
+The main components of the pipeline include:
 
-### Clone the Repository
-🧬 Grab a copy of our fantastic chatbot repository by cloning it to your local machine. Simply hit the clone button or use your preferred Git commands!
+    Retriever: Responsible for retrieving relevant passages from a knowledge source based on a given query.
+    Generator: An LLM model that generates responses to prompts using the extracted information and context from the passages.
+    Evaluator: Utilizes the RQUGE metric to evaluate the quality of generated responses against reference summaries.
 
-### Create a New Branch
-🌱 Branch out and unleash your creativity! Establish a fresh branch based on the basic chatbot. Feel free to give your branch a unique name that reflects your personality!
+# Usage
 
-### Checkout and Begin Testing
-💻 Switch to your preferred Integrated Development Environment (IDE), checkout your newly created branch, and start testing! Experiment with the chatbot, tweak its responses, and let your imagination run wild! 🎉
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)]([https://colab.research.google.com/github/weiji14/deepbedmap/](https://colab.research.google.com/drive/1Uzpy5bk0o5LAdynYFfVGKlY5toJ8F5qL?usp=sharing)]
 
-### Executing Career Advisor Chatbot
-🤖 Here are the instructions to run it in the terminal.
+Open the provided Colab Notebook and follow the instructions to run the experiment.
 
-1. Open your terminal and execute:
-   ```bash
-   bash
-      ```
-      ```bash
-   python3 -m venv ./venv
-     ```
-    ```bash
-   source ./venv/bin/activate
-    ```
-    ```bash
-   rasa run actions
-    ```
-     ```bash
-   rasa train
-    ```
-   ```bash
-   rasa run --enable-api
-    ```
-    ```bash
-   streamlit run app.py
-    ```
+Evaluation
 
+The performance of the RAG pipeline can be evaluated using the RQUGE metric. Refer to the provided Colab Notebook for detailed instructions on how to conduct the evaluation.
+Contributing
 
+Contributions to improve the RAG pipeline implementation, enhance its performance, or add new features are welcome! Please feel free to submit pull requests or raise issues.
+License
 
-This will launch the career advisor chatbot user interface, allowing you to start chatting instantly! 🗣️💬
-
-Initial Testing and Interaction
-As you interact with the chatbot, observe its responses and behavior closely. This initial testing phase helps us grasp the bot's current capabilities and pinpoint areas for enhancement. 🔍
-
-Editing NLU and Stories
-📝 Now, let's collaborate on enhancing the chatbot's intelligence. Dive into the NLU and Stories scripts together. Add new intents, refine existing ones, and craft engaging conversational paths as a team. Let's pool our ideas and creativity! 🧠💡
-
-Training the Chatbot
-After making adjustments, ensure everyone is ready to run rasa train. This step is crucial as it retrains the model using our collective modifications, making the chatbot smarter and more responsive. 🚂📊
-
-Group Testing
-Once the training is complete, let's run rasa shell together to test our revamped chatbot! We can engage in conversation, share feedback, and iterate further as needed. 🚀🔄
-
-With our combined efforts, we'll elevate our chatbot from a basic concept to a dynamic and effective communication tool. Let's collaborate, communicate, and innovate together! 💬
+Note: This repository is for experimental purposes only and may not be suitable for production use.
 
 Happy coding! If you have any questions or ideas, feel free to reach out. Let's make this chatbot project an epic adventure! 🤖
 
 
-**Carlos Jiménez Rodríguez**  
-  📧 40452913@live.napier.ac.uk
+**Md Rayhan**  
