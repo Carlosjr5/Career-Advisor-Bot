@@ -38,19 +38,19 @@ source ./venv/bin/activate
 ```bash
 pip install rasa
  ```
- Step 9: Start the Rasa action server, which allows you to run custom actions for details in conversations that cannot be handled in the Rasa dialog manager alone.
+ Step 9: Start the Rasa action server, which allows you to run custom actions for details in conversations that cannot be handled in the Rasa dialog manager alone. IF GETTING AN ISSUE OF ModuleNotFoundError: No module named 'pandas' JUST DO 'pip install pandas' then 'rasa run actions'.
 ```bash
 rasa run actions
  ```
- Step 10: Train a new Rasa model using the training data. The trained model will be used to make predictions about user inputs.
+ Step 10: OPEN A NEW TERMINAL WINDOW ON CURRENT WORKING FOLDER(Career-Advisor-Bot), RUN THE STEP 5 & 7 and continue with Train a new Rasa model using the training data. The trained model will be used to make predictions about user inputs.
 ```bash
 rasa train
  ```
- Step 11: Start the main Rasa server and enable the API. This allows Rasa to handle user messages via HTTP requests.
+ Step 11: Whenever the model is trained you can  Start the main Rasa server and enable the API. This allows Rasa to handle user messages via HTTP requests.
   ```bash
 rasa run --enable-api
  ```
- Step 12: Run the Streamlit application named 'app.py'. Streamlit is an open-source app framework for Machine Learning and Data Science projects.
+ Step 12: OPEN A NEW TERMINAL WINDOW ON CURRENT WORKING FOLDER(Career-Advisor-Bot), RUN THE STEP 5 & 7 and Run the Streamlit application named 'app.py'. Streamlit is an open-source app framework for Machine Learning and Data Science projects.
   ```bash
 streamlit run app.py
   ```
