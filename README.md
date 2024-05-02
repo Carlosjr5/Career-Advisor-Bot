@@ -52,6 +52,9 @@ rasa run --enable-api
  ```
  Step 12: OPEN A NEW TERMINAL WINDOW ON CURRENT WORKING FOLDER(Career-Advisor-Bot), RUN THE STEP 5 & 7 and Run the Streamlit application named 'app.py'. Streamlit is an open-source app framework for Machine Learning and Data Science projects.
   ```bash
+pip install streamlit
+  ```
+  ```bash
 streamlit run app.py
   ```
 
