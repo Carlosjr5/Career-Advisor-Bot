@@ -22,7 +22,7 @@ git clone https://github.com/Carlosjr5/Career-Advisor-Bot.git
 ```bash
 cd Career-Advisor-Bot
  ```
- Step 5: Start a new instance of the bash shell. This command is typically not necessary in a script unless for specific reasons, like running a script that needs bash-specific features.
+ Step 5: Start a new instance of the bash shell in the root. This command is typically not necessary in a script unless for specific reasons, like running a script that needs bash-specific features.
 ```bash
 bash
  ```
