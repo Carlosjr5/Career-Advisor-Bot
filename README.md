@@ -4,7 +4,7 @@
 ### Executing Career Advisor Chatbot
 🤖 Here are the instructions to run it in the terminal.
 
-# Open your terminal and execute:
+# Open your Windows PowerShell or Terminal and execute:
    
  Step 1: Create a new directory called 'careerAdvisor' to organize project-related files.
 ```bash
