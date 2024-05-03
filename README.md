@@ -63,8 +63,11 @@ streamlit run app.py
 
 This will launch the career advisor chatbot user interface, allowing you to start chatting instantly! 🗣️💬
 
+<img width="677" alt="image" src="https://github.com/Carlosjr5/Career-Advisor-Bot/assets/77840319/df3e71c6-859c-4c6d-8ea2-5a043872cb78">
+
+
 Happy coding! If you have any questions or ideas, feel free to reach out. Let's make this chatbot project an epic adventure! 🤖
 
 
 **Carlos Jiménez Rodríguez**  
-  📧 40452913@live.napier.ac.uk
+  📧 cjimenezr23@gmail.com
