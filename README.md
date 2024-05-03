@@ -39,6 +39,9 @@ source ./venv/bin/activate
 pip install rasa
  ```
  Step 9: Start the Rasa action server, which allows you to run custom actions for details in conversations that cannot be handled in the Rasa dialog manager alone. IF GETTING AN ISSUE OF ModuleNotFoundError: No module named 'pandas' JUST DO 'pip install pandas' then 'rasa run actions'.
+ ```bash
+pip install pandas
+ ```
 ```bash
 rasa run actions
  ```
